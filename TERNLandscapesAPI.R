@@ -7,17 +7,23 @@ library(RSQLite)
 library(DBI)
 ### This uses the National Soil Site Collation - Searle 2014
 
-projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
-NSSC_dbPath <- 'C:/Projects/TernLandscapes/Site Data/NSSC_2.0.0.sqlite'
+#projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
+machineName <- as.character(Sys.info()['nodename'])
+if(machineName=='soils-discovery'){
+NSSC_dbPath <- '/home/sea084/NSSC_2.0.0.sqlite'
+#NSSC_dbPath <- '/OSM/CBR/LW_SOILDATAREPO/work/NSSC/NSSC_2.0.0.sqlite'
+}else{
+  NSSC_dbPath <- 'C:/Projects/TernLandscapes/Site Data/NSSC_2.0.0.sqlite'
+}
 
 agencyNum <- c('1','2','3','4','5','6','7','8')
 agencyName <- c('NSWGovernment','VicGovernment','QLDGovernment','SAGovernment','WAGovernment','TasGovernment','NTGovernment','CSIRO')
 restricted <- c(F,T,T,F,F,F,T,F)
 agencyInfo <- data.frame(agencyName, agencyNum, restricted, stringsAsFactors = F)
 
-tableLevels <- read.csv(paste0(projectRoot, '/Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
-Properties <- read.csv(paste0(projectRoot, '/Data/Properties.csv'), stringsAsFactors = F)
-labMethods <- read.csv(paste0(projectRoot, '/Data/LabMethods.csv'), stringsAsFactors = F)
+tableLevels <- read.csv(paste0('Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
+Properties <- read.csv(paste0('Data/Properties.csv'), stringsAsFactors = F)
+labMethods <- read.csv(paste0('Data/LabMethods.csv'), stringsAsFactors = F)
 
 PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
 
