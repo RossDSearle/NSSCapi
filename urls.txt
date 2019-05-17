@@ -1,0 +1,15 @@
+
+http://127.0.0.1:5635/SoilDataAPI/Providers
+http://127.0.0.1:5635/SoilDataAPI/Providers?format=xml
+http://127.0.0.1:5635/SoilDataAPI/Providers?format=csv
+http://127.0.0.1:5635/SoilDataAPI/Providers?format=html
+
+http://127.0.0.1:5635/SoilDataAPI/Properties?format=csv
+http://127.0.0.1:5635/SoilDataAPI/Properties?format=xml
+http://127.0.0.1:5635/SoilDataAPI/Properties?format=html
+
+
+http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=json
+http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=csv
+http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=xml
+http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=html

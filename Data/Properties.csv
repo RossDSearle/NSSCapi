@@ -1,0 +1,1340 @@
+PropertyType,PropertyGroup,Property,Description
+FieldMeasurement,AGENCIES,STATE_CODE,State code p7 Note: new codes
+FieldMeasurement,AGENCIES,AGENCY_CODE,Agency unique identifier
+FieldMeasurement,AGENCIES,AGENCY_NAME,Name of agency
+FieldMeasurement,AGENCIES,AGENCY_ACRONYM,Acronym of agency  e.g. ACLEP
+FieldMeasurement,ARCHIVE_SAMPLES,AGENCY_CODE,Agency identifier
+FieldMeasurement,ARCHIVE_SAMPLES,PROJ_CODE,Project identifier
+FieldMeasurement,ARCHIVE_SAMPLES,SAMP_TYPE,Sample type  e.g. fine earth  whole soil
+FieldMeasurement,ARCHIVE_SAMPLES,LOCATION,Location of sample i.e. shelf number
+FieldMeasurement,ARCHIVE_SAMPLES,>2mm,Presence of coarse fragment sample
+FieldMeasurement,ARCHIVE_SAMPLES,SUBSAMPLE_DATE,Date of subsampling
+FieldMeasurement,ARCHIVE_SAMPLES,SUBSAMPLE_TRAY,Subsample tray identifier
+FieldMeasurement,COARSE_FRAGS,CF_ABUN,Coarse fragments abundance p139
+FieldMeasurement,COARSE_FRAGS,CF_SIZE,Coarse fragments size p140
+FieldMeasurement,COARSE_FRAGS,CF_SHAPE,Coarse fragments shape p142
+FieldMeasurement,COARSE_FRAGS,CF_LITH,Coarse fragment lithology p142
+FieldMeasurement,COARSE_FRAGS,CF_STRENGTH,Coarse fragments strength p142
+FieldMeasurement,COARSE_FRAGS,CF_DISTRIBUTION,Coarse fragments distribution p170
+FieldMeasurement,COLOURS,COL_HUE_VAL_CHROM,Colour for decode
+FieldMeasurement,COLOURS,COL_HUE,Colour hue p159
+FieldMeasurement,COLOURS,COL_MOISTURE_STAT,Colour moisture status p159
+FieldMeasurement,CRACKS,AGENCY_CODE,Agency identifier
+FieldMeasurement,CRACKS,CRACK_WIDTH,Crack width p184
+FieldMeasurement,CUTANS,AGENCY_CODE,Agency identifier
+FieldMeasurement,CUTANS,PROJ_CODE,Project identifier
+FieldMeasurement,CUTANS,CUTAN_TYPE,Type of cutan p182
+FieldMeasurement,CUTANS,CUTAN_ABUN,Abundance of cutan p183
+FieldMeasurement,CUTANS,CUTAN_DISTINCT,Distinctness of cutan p183
+FieldMeasurement,DISTURBANCES,DIST_TYPE,Disturbance of site p128
+FieldMeasurement,ELEM_GEOMORPHS,AGENCY_CODE,Agency identifier
+FieldMeasurement,ELEM_GEOMORPHS,EGM_MODE,Element mode of geomorphological  activity p29
+FieldMeasurement,ELEM_GEOMORPHS,EGM_AGENT,Element geomorphological agent p30
+FieldMeasurement,FABRICS,AGENCY_CODE,Agency identifier
+FieldMeasurement,FABRICS,FAB_TYPE,Fabric type p181
+FieldMeasurement,FABRICS,FAB_ABUN,Fabric abundance
+FieldMeasurement,HORIZONS,AGENCY_CODE,Agency identifier
+FieldMeasurement,HORIZONS,H_DESIG_MASTER,Master horizon designation  e.g. A1  B2 p148
+FieldMeasurement,HORIZONS,H_DESIG_SUFFIX,Horizon suffix  e.g.  b  c  d
+FieldMeasurement,HORIZONS,H_TEXTURE,Field texture (mineral soils)  including modifiers p161
+FieldMeasurement,HORIZONS,H_TEXTURE_QUAL,Field texture qualification
+FieldMeasurement,HORIZONS,H_SOIL_WATER_STAT,Soil water status p186
+FieldMeasurement,HORIZONS,H_STICKINESS,Consistence  stickiness
+FieldMeasurement,HORIZONS,H_PLASTICITY_TYPE,Consistence  type of plasticity p188
+FieldMeasurement,HORIZONS,H_PLASTICITY_DEG,Consistence  degree of plasticity p188
+FieldMeasurement,HORIZONS,H_WATER_REPELLENCE,Water repellence p191
+FieldMeasurement,HORIZONS,H_CARBONATE_EFF,Effervescence of carbonate in fine earth p198
+FieldMeasurement,HORIZONS,H_BOUND_DISTINCT,Distinctness of boundary between horizons p199
+FieldMeasurement,HORIZONS,H_BOUND_SHAPE,Shape of boundary between horizons p200
+FieldMeasurement,HORIZONS,H_PERMEABILITY,Soil water regime  permeability p200
+FieldMeasurement,HORIZONS,H_NOTES,Free text notes
+FieldMeasurement,LAND_COVER,LCOV_DATE,Date land cover observed ddmmyyyy
+FieldMeasurement,LAND_COVER,LCOV_REF,Land cover reference e.g. FAO Land Cover
+FieldMeasurement,LAND_COVER,LAND_COVER,Land cover code
+FieldMeasurement,LAND _USES,LUSE_DATE,Date land use observed or started
+FieldMeasurement,LAND _USES,LUSE_END_DATE,End date for land use ddmmyyyy
+FieldMeasurement,LAND _USES,LUSE_REF,Land use reference e.g. ALUM Version 6
+FieldMeasurement,LAND _USES,LAND_USE,Land use code
+FieldMeasurement,MICRORELIEFS,MR_TYPE,Type of microrelief p129
+FieldMeasurement,MICRORELIEFS,MR_PROP_GILGAI,Proportions of gilgai components p130
+FieldMeasurement,MICRORELIEFS,MR_BIOTIC_AGENT,Biotic microrelief (agent) p131
+FieldMeasurement,MICRORELIEFS,MR_BIOTIC_COMP,Component of biotic microrelief p133
+FieldMeasurement,MOTTLES,MOTT_TYPE,Mottle type p160
+FieldMeasurement,MOTTLES,MOTT_ABUN,Mottle abundance p160
+FieldMeasurement,MOTTLES,MOTT_SIZE,Mottle size p160
+FieldMeasurement,MOTTLES,MOTT_CONTRAST,Mottle contrast p160
+FieldMeasurement,MOTTLES,MOTT_HUE_VAL_CHROM,Colour for decode
+FieldMeasurement,MOTTLES,MOTT_HUE,Mottle hue p159
+FieldMeasurement,MOTTLES,MOTT_MOISTURE_STAT,Mottle colour moisture status
+FieldMeasurement,MOTTLES,MOTT_COLOUR,Mottle colour i.e. old colours R
+FieldMeasurement,MOTTLES,MOTT_BOUN_DISTINCT,Distinctness of boundaries
+FieldMeasurement,OBSERVATIONS,O_ID,Observation identifier
+FieldMeasurement,OBSERVATIONS,O_TYPE,Type of soil observation
+FieldMeasurement,OBSERVATIONS,O_NATURE,Nature of observation e.g. characterisation  single  etc
+FieldMeasurement,OBSERVATIONS,O_DESC_BY,Officer code p13
+FieldMeasurement,OBSERVATIONS,O_DATE_DESC,Date site described p13 ddmmyyyy
+FieldMeasurement,OBSERVATIONS,O_DATUM,Datum of the coordinates
+FieldMeasurement,OBSERVATIONS,O_LOCATION_STATE,State e.g. TAS  NSW  VIC
+FieldMeasurement,OBSERVATIONS,O_LOCATION_NOTES,Free text location notes
+FieldMeasurement,OBSERVATIONS,O_LAND_USE,Land use code
+FieldMeasurement,OBSERVATIONS,O_FOREST_TYPE,Type of forest p73 (2 Ed)
+FieldMeasurement,OBSERVATIONS,O_RF_COMPLEX,Rainforest complexity p77
+FieldMeasurement,OBSERVATIONS,O_RF_LEAFSIZE,Rainforest leaf size of tallest stratum trees p81
+FieldMeasurement,OBSERVATIONS,O_RF_FLOR_COMP,Rainforest floristic composition of tallest stratum trees
+FieldMeasurement,OBSERVATIONS,O_RF_INDICATOR,Rainforest indicator growth form p84 (2nd Ed)
+FieldMeasurement,OBSERVATIONS,O_RF_EMERGENTS,Rainforest emergents p85
+FieldMeasurement,OBSERVATIONS,O_SCLEROPHYLL,Sclerophyll presence in canopy p63 85
+FieldMeasurement,OBSERVATIONS,O_VEG_NOTES,Free text vegetation notes
+FieldMeasurement,OBSERVATIONS,O_ELEVATION_EVAL,Elevation evaluation p127
+FieldMeasurement,OBSERVATIONS,O_ELEVATION_PF,Elevation prefix
+FieldMeasurement,OBSERVATIONS,O_DRAINAGE_EVAL,Drainage height evaluation
+FieldMeasurement,OBSERVATIONS,O_DRAINAGE,Drainage  soil water regime  p202
+FieldMeasurement,OBSERVATIONS,O_MR_SAMPLED,Component of microrelief sampled p133
+FieldMeasurement,OBSERVATIONS,O_SOIL_DISTURB,Soil disturbance
+FieldMeasurement,OBSERVATIONS,O_WIND_STATE,Wind erosion state p134
+FieldMeasurement,OBSERVATIONS,O_WIND_DEG,Wind erosion degree p134
+FieldMeasurement,OBSERVATIONS,O_WIND_STABILITY,Wind erosion stability
+FieldMeasurement,OBSERVATIONS,O_WIND_VISIBILITY,Wind erosion occurring on the day
+FieldMeasurement,OBSERVATIONS,O_SCALD_DEG,Scald erosion degree p135
+FieldMeasurement,OBSERVATIONS,O_SHEET_STATE,Sheet erosion state p135
+FieldMeasurement,OBSERVATIONS,O_SHEET_DEG,Sheet erosion degree p135
+FieldMeasurement,OBSERVATIONS,O_WAVE_STATE,Wave erosion state p137
+FieldMeasurement,OBSERVATIONS,O_WAVE_DEG,Wave erosion degree p137
+FieldMeasurement,OBSERVATIONS,O_RILL_STATE,Rill erosion state p136
+FieldMeasurement,OBSERVATIONS,O_RILL_DEG,Rill erosion degree p136
+FieldMeasurement,OBSERVATIONS,O_MASS_STATE,Mass movement erosion state
+FieldMeasurement,OBSERVATIONS,O_MASS_DEG,Mass movement erosion degree
+FieldMeasurement,OBSERVATIONS,O_GULLY_STATE,Gully erosion state p137
+FieldMeasurement,OBSERVATIONS,O_GULLY_DEG,Gully erosion degree p137
+FieldMeasurement,OBSERVATIONS,O_STBANK_STATE,Stream bank erosion state
+FieldMeasurement,OBSERVATIONS,O_STBANK_DEG,Stream bank erosion degree
+FieldMeasurement,OBSERVATIONS,O_TUNNEL_STATE,Tunnel erosion state p137
+FieldMeasurement,OBSERVATIONS,O_TUNNEL_DEG,Tunnel erosion degree
+FieldMeasurement,OBSERVATIONS,O_OTHER_ER_STATE,Other erosion state  p134
+FieldMeasurement,OBSERVATIONS,O_OTHER_ER_DEG,Other erosion degree  p134
+FieldMeasurement,OBSERVATIONS,O_OTHER_ER_TYPE,Other erosion type  free text
+FieldMeasurement,OBSERVATIONS,O_GULLY_DEPTH,Gully depth p137
+FieldMeasurement,OBSERVATIONS,O_AGGRADATION,Aggradation p138
+FieldMeasurement,OBSERVATIONS,O_INUND_FREQ,Inundation frequency p138
+FieldMeasurement,OBSERVATIONS,O_INUND_DUR,Inundation duration (annual)
+FieldMeasurement,OBSERVATIONS,O_INUND_DEPTH,Inundation depth (annual)
+FieldMeasurement,OBSERVATIONS,O_INUND_RUNON_VEL,Inundation runon velocity
+FieldMeasurement,OBSERVATIONS,O_DEPTH_WATER_PREF,Depth to free water prefix:
+FieldMeasurement,OBSERVATIONS,O_DEPTH_RHORIZON_PF,Depth to R horizon prefix
+FieldMeasurement,OBSERVATIONS,O_RUNOFF,Runoff p144
+FieldMeasurement,OBSERVATIONS,O_PERMEABILITY,Permeability p200
+FieldMeasurement,OBSERVATIONS,O_SB_OBS_TYPE,Substrate type of observation
+FieldMeasurement,OBSERVATIONS,O_SB_CONFIDENCE,Substrate confidence p206
+FieldMeasurement,OBSERVATIONS,O_SB_DEPTH_PF,Substrate depth prefix
+FieldMeasurement,OBSERVATIONS,O_SB_GRAIN_SIZE,Substrate grain size p206
+FieldMeasurement,OBSERVATIONS,O_SB_TEXTURE,Substrate texture p207
+FieldMeasurement,OBSERVATIONS,O_SB_STRUCTURE,Substrate structure p207
+FieldMeasurement,OBSERVATIONS,O_SB_POROSITY,Substrate porosity p208
+FieldMeasurement,OBSERVATIONS,O_SB_STRENGTH,Substrate strength p209
+FieldMeasurement,OBSERVATIONS,O_SB_LITH,Substrate lithology p209
+FieldMeasurement,OBSERVATIONS,O_SB_MASS_SPAC_DIS,Substrate mass spacing of discontinuities
+FieldMeasurement,OBSERVATIONS,O_SB_MASS_ALT,Substrate mass alteration
+FieldMeasurement,OBSERVATIONS,O_SB_MASS_STRENGTH,Substrate mass strength
+FieldMeasurement,OBSERVATIONS,O_SB_MASS_GEN_TYPE,Substrate mass genetic type
+FieldMeasurement,OBSERVATIONS,O_SUBSTRATE_NOTES,Free text substrate notes
+FieldMeasurement,OBSERVATIONS,O_PPF,Principal profile form
+FieldMeasurement,OBSERVATIONS,O_GSG,Great soil group
+FieldMeasurement,OBSERVATIONS,O_ASC_TECH_REF,Aust soil classification technical reference
+FieldMeasurement,OBSERVATIONS,O_ASC_CONF,Aust soil classification confidence
+FieldMeasurement,OBSERVATIONS,O_ASC_ORD,Aust soil classification order
+FieldMeasurement,OBSERVATIONS,O_ASC_SUBORD,Aust soil classification suborder
+FieldMeasurement,OBSERVATIONS,O_ASC_GG,Aust soil classification great soil group
+FieldMeasurement,OBSERVATIONS,O_ASC_SUBG,Aust soil classification subgroup
+FieldMeasurement,OBSERVATIONS,O_ASC_FAM1,Aust soil classification family 1 - likely to be horizon thickness
+FieldMeasurement,OBSERVATIONS,O_ASC_FAM2,Aust soil classification family 2 -  likely to be gravel content
+FieldMeasurement,OBSERVATIONS,O_ASC_FAM3,Aust soil classification family -  likely to be A1 texture
+FieldMeasurement,OBSERVATIONS,O_ASC_FAM4,Aust soil classification family - likely to be B texture
+FieldMeasurement,OBSERVATIONS,O_ASC_FAM5,Aust soil classification family - likely to be soil depth
+FieldMeasurement,OBSERVATIONS,O_ASC_NOTES,Aust soil classification
+FieldMeasurement,OBSERVATIONS,O_UNI_SOIL_CLASS,Unified soil classification
+FieldMeasurement,OBSERVATIONS,O_SOIL_TAXONOMY,Soil taxonomy p226
+FieldMeasurement,OBSERVATIONS,O_TAX_UNIT_TYPE,Taxonomic unit type
+FieldMeasurement,OBSERVATIONS,O_TAX_UNIT_NAME,Taxonomic unit name  free
+FieldMeasurement,OBSERVATIONS,O_MAP_UNIT_TYPE,Mapping unit type
+FieldMeasurement,OBSERVATIONS,O_MAP_UNIT_NAME,Map unit name  free text
+FieldMeasurement,OBSERVATIONS,O_NOTES,Free text notes
+FieldMeasurement,OBS_MNG_PRACS,OMP_DATE,Date mngt practice observed ddmmyyyy
+FieldMeasurement,OBS_MNG_PRACS,OMP_REF,Management practice reference e.g. LUMIS Version 1
+FieldMeasurement,OBS_MNG_PRACS,OMP_COVER,Observation mngt practice type  e.g. liming  fertiliser
+FieldMeasurement,OFFICERS,AGENCY_CODE,Agency identifier
+FieldMeasurement,OFFICERS,OFFR_CODE,Officer code p13. Code is unique within each state
+FieldMeasurement,OFFICERS,OFFR_NAME,Officer name
+FieldMeasurement,PANS,PAN_CEMENTATION,Pan cementation p192
+FieldMeasurement,PANS,PAN_TYPE,Type of pan p192
+FieldMeasurement,PANS,PAN_CONTINUITY,Continuity of pan p195
+FieldMeasurement,PANS,PAN_STRUCTURE,Structure of pan p195
+FieldMeasurement,PATT_GEOMORPHS,PGM_MODE,Pattern  mode of geomorphological  activity p52
+FieldMeasurement,PATT_GEOMORPHS,PGM_AGENT,Pattern geomorphological agent p52
+FieldMeasurement,PATT_GEOMORPHS,PGM_STAT,Pattern status of geomorphological activity p54
+FieldMeasurement,PHS,PH_METHOD,Field pH method
+FieldMeasurement,PHS,PH_DEPTH,Depth at which pH recorded (m) p198
+FieldMeasurement,PHS,PH_VALUE,Field pH value p198
+FieldMeasurement,PORES,PORE_ABUN,Abundance of macropores p184
+FieldMeasurement,PORES,PORE_DIAMETER,Diameter of macropores p185
+FieldMeasurement,PROJECTS,AGENCY_CODE,Agency identifier
+FieldMeasurement,PROJECTS,PROJ_CODE,Project identifier (unique within each agency)
+FieldMeasurement,PROJECTS,PROJ_NAME,Name of project
+FieldMeasurement,PROJECTS,PROJ_MANAGER_CODE,Officer code p13
+FieldMeasurement,PROJECTS,PROJ_BIBLIO_REF,Bibliographic reference
+FieldMeasurement,PROJECTS,PROJ_START_DATE,Date of commencement of project ddmmyyyy
+FieldMeasurement,PROJECTS,PROJ_FINISH_DATE,Date of completion of project ddmmyyyy
+FieldMeasurement,ROCK_OUTCROPS,RO_ABUN,Rock outcrop abundance p143
+FieldMeasurement,ROCK_OUTCROPS,RO_LITH,Rock outcrop lithology p214
+FieldMeasurement,ROOTS,AGENCY_CODE,Agency identifier
+FieldMeasurement,ROOTS,PROJ_CODE,Project identifier
+FieldMeasurement,ROOTS,ROOT_ABUN,Root abundance (per 0.01 m2) p199
+FieldMeasurement,ROOTS,ROOT_SIZE,Root size (diameter) p199
+FieldMeasurement,SAMPLES,SAMP_SIZE,Size of final sample
+FieldMeasurement,SAMPLES,SAMP_NOTES,Free text notes
+FieldMeasurement,SEGREGATIONS,AGENCY_CODE,Agency identifier
+FieldMeasurement,SEGREGATIONS,PROJ_CODE,Project identifier
+FieldMeasurement,SEGREGATIONS,SEG_ABUN,Segregation abundance p196
+FieldMeasurement,SEGREGATIONS,SEG_NATURE,Segregation nature p196
+FieldMeasurement,SEGREGATIONS,SEG_FORM,Segregation form p196
+FieldMeasurement,SEGREGATIONS,SEG_SIZE,Segregation size p197
+FieldMeasurement,SEGREGATIONS,SEG_STRENGTH,Segregation strength p197
+FieldMeasurement,SEGREGATIONS,SEG_MAGNETIC_ATTR,Segregation magnetic attributes
+FieldMeasurement,SITES,S_ID,Site identifier
+FieldMeasurement,SITES,S_ORIG_TECH_REF,Technical reference used
+FieldMeasurement,SITES,S_MAP_SCALE,Map scale p9
+FieldMeasurement,SITES,S_MAP_SHEET_NO,Map sheet number
+FieldMeasurement,SITES,S_MAP_REF_TYPE,Map reference type p8
+FieldMeasurement,SITES,S_PHOTO_FILM_NO,Air photo film number p10
+FieldMeasurement,SITES,S_PHOTO_RUN_NO,Air photo run number p10
+FieldMeasurement,SITES,S_DESC_BY,Officer code p13
+FieldMeasurement,SITES,S_DATE_DESC,Date site described p13 ddmmyyyy
+FieldMeasurement,SITES,S_TYPE,Type of site p13
+FieldMeasurement,SITES,S_SLOPE_PF,Slope prefix
+FieldMeasurement,SITES,S_SLOPE_EVAL,Slope  means of evaluation p18
+FieldMeasurement,SITES,S_SLOPE_CLASS,Slope class  p18
+FieldMeasurement,SITES,S_MORPH_TYPE,Slope morphological type p19
+FieldMeasurement,SITES,S_ELEM_INC_SLOPE,Relative inclination of slope elements
+FieldMeasurement,SITES,S_ELEM_LOCATION,Location within landform element
+FieldMeasurement,SITES,S_ELEM_TYPE,Element type p31
+FieldMeasurement,SITES,S_MODAL_SLOPE,Modal slope p45
+FieldMeasurement,SITES,S_RELIEF_CLASS,Relief class p48
+FieldMeasurement,SITES,S_REL_MS_CLASS,Relief/modal slope class p47
+FieldMeasurement,SITES,S_STRM_CH_SPACING,Stream channel spacing p48
+FieldMeasurement,SITES,S_STRM_CH_DEV,Stream channel development p49
+FieldMeasurement,SITES,S_STRM_CH_DTOW,Channel depth relative to width
+FieldMeasurement,SITES,S_STRM_CH_MIG,Stream channel migration p50
+FieldMeasurement,SITES,S_STRM_CH_PATT,Stream-wise channel pattern p50
+FieldMeasurement,SITES,S_STRM_CH_NET_INT,Stream channel network
+FieldMeasurement,SITES,S_STRM_CH_DIR_NET,Stream channel network directionality p52
+FieldMeasurement,SITES,S_PATT_TYPE,Pattern type p55
+FieldMeasurement,SITES,S_NOTES,Free text notes
+FieldMeasurement,SITES,S_TRANS_AUTHOR,Translation of format author
+FieldMeasurement,SITES,REF_AGENCY_CODE,Parent site agency identifier (used for nested sites)
+FieldMeasurement,SITES,REF_PROJ_CODE,Parent site project identifier (used for nested sites)
+FieldMeasurement,SITES,REF_S_ID,Parent site site identifier (used for nested sites)
+FieldMeasurement,SITE_MNG_PRCS,SMP_DATE,Date mngt practice observed
+FieldMeasurement,SITE_MNG_PRCS,SMP_REF,Management practice reference e.g. LUMIS Version 1
+FieldMeasurement,SITE_MNG_PRCS,SMP_CODE,Site mngt practice type  e.g. liming  fertiliser
+FieldMeasurement,STATES,STATE_CODE,State code p7 Note: new codes
+FieldMeasurement,STATES,STATE_NAME,State name  p7
+FieldMeasurement,STRENGTHS,STRG_CLASS,Strength p187
+FieldMeasurement,STRENGTHS,STRG_MOISTURE_STAT,Moisture status p187
+FieldMeasurement,STRUCTURES,AGENCY_CODE,Agency identifier
+FieldMeasurement,STRUCTURES,PROJ_CODE,Project identifier
+FieldMeasurement,STRUCTURES,STR_PED_GRADE,Grade of pedality p171
+FieldMeasurement,STRUCTURES,STR_PED_SIZE,Size of peds p172
+FieldMeasurement,STRUCTURES,STR_PED_TYPE,Type of pedality p173
+FieldMeasurement,STRUCTURES,STR_COMPOUND_PED,Compound pedality p180
+FieldMeasurement,STRUCTURES,STR_CLODS_FRAGS,Clods and fragments p181
+FieldMeasurement,SUB_MINERAL_COMPS,SB_MINERAL_COMP,Mineral composition p208
+FieldMeasurement,SURF_COARSE_FRAGS,SCF_ABUN,Surface coarse fragment abundance
+FieldMeasurement,SURF_COARSE_FRAGS,SCF_SIZE,Surface coarse fragment size p140
+FieldMeasurement,SURF_COARSE_FRAGS,SCF_SHAPE,Surface coarse fragment shape p142
+FieldMeasurement,SURF_COARSE_FRAGS,SCF_LITH,Surface coarse fragment lithology p214
+FieldMeasurement,SURF_COARSE_FRAGS,SCF_STRENGTH,Surface coarse fragment strength p209
+FieldMeasurement,SURF_CONDITIONS,SCON_STAT,Condition of surface when dry p189
+FieldMeasurement,VEG_SPECIES,AGENCY_CODE,Agency identifier
+FieldMeasurement,VEG_SPECIES,PROJ_CODE,Project identifier
+FieldMeasurement,VEG_SPECIES,VSTR_CODE,Stratum  T=tallest  M=mid  L=lower  U=undescribed
+FieldMeasurement,VEG_SPECIES,VSP_SPECIES,Genus and species
+FieldMeasurement,VEG_SPECIES,VSP_CODE,Vegetation species
+FieldMeasurement,VEG_SPECIES,VSP_ABUN,Vegetation species abundance
+FieldMeasurement,VEG_STRATA,VSTR_CODE,Stratum  T=tallest  M=mid  L=lower  U=undescribed  CM=continuum mid
+FieldMeasurement,VEG_STRATA,VSTR_GROWTH_FORM,Growth form
+FieldMeasurement,VEG_STRATA,VSTR_HEIGHT_CLASS,Height
+FieldMeasurement,VEG_STRATA,VSTR_COVER_CLASS,Crown and foliage cover class
+LaboratoryMeasurement,SULFUR,10_BC,"Bicarbonate-extractable sulfur. Keay, Menage and Dean (1972)"
+LaboratoryMeasurement,SULFUR,10A_NR,Total sulfur - S(%) - Not recorded
+LaboratoryMeasurement,SULFUR,10A1,Total sulfur - S(%) - X-ray fluorescence
+LaboratoryMeasurement,NA,10A3,C N S; Dumas
+LaboratoryMeasurement,SULFUR,10B,Extractable sulfur (mg/kg) - Phosphate extractable sulfur
+LaboratoryMeasurement,SULFUR,10B_NR,Extractable sulfur (mg/kg) - Not recorded
+LaboratoryMeasurement,SULFUR,10B1,Calcium phosphate-extractable sulfur - manual distillation
+LaboratoryMeasurement,SULFUR,10B2,Calcium phosphate-extractable sulfur - automated distillation
+LaboratoryMeasurement,SULFUR,10B3,Calcium phosphate-extractable sulfur - ICPAES
+LaboratoryMeasurement,SULFUR,10B4,Calcium phosphate-extractable sulfur - ion chromatography
+LaboratoryMeasurement,SULFUR,10C1,"Calcium phosphate-extractable sulfur - ICPAES, + charcoal (CPC-S)"
+LaboratoryMeasurement,SULFUR,10D1,Potassium chloride - 40 sulfur (KCl-40)-S
+LaboratoryMeasurement,NA,10Z1,4M HCL extr. ICP finish
+LaboratoryMeasurement,GYPSUM,11A1,Total gypsum
+LaboratoryMeasurement,GYPSUM,11A2,Total gypsum - MIR reflectance spectroscopy
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HCL_CU,Total element - Cu(mg/kg) - Total acid(HCl)
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HCL_FE,Total element - Fe(%) - Total acid(HCl) extractable Fe
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HCL_FEO,Total element - Fe(%) - Total acid(HCl) extractable Fe2O3
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HCL_MN,Total element - Mn(mg/kg) - Total acid(HCl)
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HCL_ZN,Total element - Zn(mg/kg) - Total acid(HCl)
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HF_CU,Total element - Cu(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HF_FE,Total element - Fe(%) - HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HF_MN,Total element - Mn(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HF_ZN,Total element - Zn(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_HF+_FEO,Total element - Fe(%) - HF/HClO4 Digest(Fe2O3)
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_NR_CU,Total element - Cu(mg/kg) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_NR_FE,Total element - Fe(%) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_NR_MN,Total element - Mn(mg/kg) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_NR_ZN,Total element - Zn(mg/kg) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_XRF_CU,Total element - Cu(mg/kg) - X-Ray Fuoresence
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_XRF_FE,Total element - Fe(%) - X-Ray Fuoresence
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_XRF_FEO,Total element - Fe(%) - X-Ray Fuoresence (Fe2O3)
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_XRF_MN,Total element - Mn(mg/kg) - X-Ray Fuoresence
+LaboratoryMeasurement,TOTAL_ELEMENTS,12_XRF_ZN,Total element - Zn(mg/kg) - X-Ray Fuoresence
+LaboratoryMeasurement,AL,12A1_AL,"DTPA - extractable copper, zinc, manganese,aluminium and iron"
+LaboratoryMeasurement,CU,12A1_CU,"DTPA - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,FE,12A1_FE,"DTPA - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,MN,12A1_MN,"DTPA - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,ZN,12A1_ZN,"DTPA - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,CU,12B1_CU,Ammonium bicarbonate/EDTA - extractable copper
+LaboratoryMeasurement,FE,12B1_FE,Ammonium bicarbonate/EDTA - extractable Iron
+LaboratoryMeasurement,MN,12B1_MN,Ammonium bicarbonate/EDTA - extractable manganese
+LaboratoryMeasurement,ZN,12B1_ZN,Ammonium bicarbonate/EDTA - extractable zinc
+LaboratoryMeasurement,BORON,12C1,Calcium chloride extractable boron - manual colour
+LaboratoryMeasurement,BORON,12C2,Calcium chloride extractable boron - ICPAES
+LaboratoryMeasurement,NA,12C3,"Water extract, ICP"
+LaboratoryMeasurement,CU,12D1_CU,"0.1 M HCl - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,FE,12D1_FE,"0.1 M HCl - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,MN,12D1_MN,"0.1 M HCl - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,ZN,12D1_ZN,"0.1 M HCl - extractable copper, zinc, manganese and iron"
+LaboratoryMeasurement,MO,12E1,Calcium chloride - extractable Mo
+LaboratoryMeasurement,TOTAL_ELEMENTS,13_C_FE,Extractable Fe(%) - Method recorded as C
+LaboratoryMeasurement,TOTAL_ELEMENTS,13_NR_AL,Extractable Al(%) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,13_NR_FE,Extractable Fe(%) - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,13_NR_MN,Extractable Mn(%) - Not recorded
+LaboratoryMeasurement,NA,13A1,Si
+LaboratoryMeasurement,AL,13A1_AL,Oxalate-extractable aluminium
+LaboratoryMeasurement,FE,13A1_FE,Oxalate-extractable iron
+LaboratoryMeasurement,MN,13A1_MN,Oxalate-extractable manganese
+LaboratoryMeasurement,SI,13A1_SI,Oxalate-extractable silicon
+LaboratoryMeasurement,AL,13B1_AL,Pyrophosphate-extractable aluminium
+LaboratoryMeasurement,FE,13B1_FE,Pyrophosphate-extractable iron
+LaboratoryMeasurement,TOTAL_ELEMENTS,13C_C_FE,Extractable Fe (Free) % - Method recorded as C
+LaboratoryMeasurement,AL,13C1_AL,"Citrate/dithionite-extractable iron, aluminium, Manganese and Silicon"
+LaboratoryMeasurement,FE,13C1_FE,"Citrate/dithionite-extractable iron, aluminium, Manganese and Silicon"
+LaboratoryMeasurement,TOTAL_ELEMENTS,13C1_FE203,Extractable Fe(Free) % - Citrate/Dithionite Extractable Fe2O3
+LaboratoryMeasurement,MN,13C1_MN,"Citrate/dithionite-extractable iron, aluminium, Manganese and Silicon"
+LaboratoryMeasurement,SI,13C1_SI,"Citrate/dithionite-extractable iron, aluminium, Manganese and Silicon"
+LaboratoryMeasurement,SI,13D1,Acid-extractable soil silicon - automated colour
+LaboratoryMeasurement,SI,13D2,Acid-extractable soil silicon - ICPAES
+LaboratoryMeasurement,NA,14_NR_S,NA
+LaboratoryMeasurement,SE,14A1,Saturation extract - filter suction
+LaboratoryMeasurement,SE,14A2,Saturation extract - automatic extractor
+LaboratoryMeasurement,SE,14A3,"Saturation extract - centrifuge, closed system"
+LaboratoryMeasurement,SE,14A4,"Saturation extract - centrifuge, Gillman"
+LaboratoryMeasurement,EC,14B1,Electrical conductivity/SE
+LaboratoryMeasurement,PH/SE,14C1,pH/SE
+LaboratoryMeasurement,BICARB/SE,14D1_BC,Bicarbonate/SE and carbonate/SE - potentiometric titration
+LaboratoryMeasurement,BICARB/SE,14D1_BiCar,Bicarbonate/SE - potentiometric titration
+LaboratoryMeasurement,CARB/SE,14D1_C,Bicarbonate/SE and carbonate/SE - potentiometric titration
+LaboratoryMeasurement,CARBONATES,14D1_Carb,Carbonate/SE - potentiometric titration
+LaboratoryMeasurement,BICARB/SE,14D2_BC,Bicarbonate/SE and carbonate/SE - indicator method
+LaboratoryMeasurement,BICARB/SE,14D2_BiCar,Bicarbonate/SE  - indicator method
+LaboratoryMeasurement,CARB/SE,14D2_C,Bicarbonate/SE and carbonate/SE - indicator method
+LaboratoryMeasurement,CARBONATES,14D2_Carb,Carbonate/SE - indicator method
+LaboratoryMeasurement,CHLORIDE/SE,14E1,Chloride/SE - potentiometric titration
+LaboratoryMeasurement,CHLORIDE/SE,14E2,Chloride/SE - ion chromatography
+LaboratoryMeasurement,CHLORIDE/SE,14E2a,Chloride/SE - ion chromatography (chemical suppression of eluent conductivity)
+LaboratoryMeasurement,CHLORIDE/SE,14E2b,Chloride/SE - ion chromatography (single column with electronic suppression of eluent conductivity)
+LaboratoryMeasurement,CHLORIDE/SE,14E3,Chloride/SE - ICPAES
+LaboratoryMeasurement,SULFATE/SE,14F1,Sulfate/SE - ICPAES
+LaboratoryMeasurement,SULFATE/SE,14F2,Sulfate/SE - turbidimetric
+LaboratoryMeasurement,SULFATE/SE,14F3,Sulfate/SE - gravimetric
+LaboratoryMeasurement,SULFATE/SE,14F4,Sulfate/SE - automated colour
+LaboratoryMeasurement,SULFATE/SE,14F5,Sulfate/SE - ion chromatography
+LaboratoryMeasurement,SULFATE/SE,14F5a,Sulfate/SE - ion chromatography (chemical suppression of eluent conductivity)
+LaboratoryMeasurement,SULFATE/SE,14F5b,Sulfate/SE - ion chromatography (single column with electronic suppression of eluent conductivity)
+LaboratoryMeasurement,FLUORIDE/SE,14G1,Fluoride/SE - specific ion electrode
+LaboratoryMeasurement,FLUORIDE/SE,14G2,Fluoride/SE - ion chromatography
+LaboratoryMeasurement,SOL_BASES_CA,14H1_CA,"Soluble bases/SE (Ca,Mg,K,Na)"
+LaboratoryMeasurement,SOL_BASES_K,14H1_K,"Soluble bases/SE (Ca,Mg,K,Na)"
+LaboratoryMeasurement,SOL_BASES_MG,14H1_MG,"Soluble bases/SE (Ca,Mg,K,Na)"
+LaboratoryMeasurement,SOL_BASES_NA,14H1_NA,"Soluble bases/SE (Ca,Mg,K,Na)"
+LaboratoryMeasurement,ECEC,15_BASES,Sum of Ex. cations + Ex. acidity - Sum of basic exch. cations
+LaboratoryMeasurement,CEC,15_HSK_CEC,CEC - meq per 100g of soil - HOSK
+LaboratoryMeasurement,ECEC,15_NR,Sum of Ex. cations + Ex. acidity - Not recorded
+LaboratoryMeasurement,EXCH_AL,15_NR_AL,Aluminium Cation - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,NA,15_NR_BSa,NA
+LaboratoryMeasurement,EXCH_BASES_CA,15_NR_CA,Exch. basic cations (Ca++) - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,EXCH_BASES_CEC,15_NR_CEC,CEC - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,NA,15_NR_CMR,NA
+LaboratoryMeasurement,EXCH_H,15_NR_H,Hydrogen Cation - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,EXCH_BASES_K,15_NR_K,Exch. basic cations (K++) - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,EXCH_BASES_MG,15_NR_MG,Exch. basic cations (Mg++) - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,NA,15_NR_MN,NA
+LaboratoryMeasurement,EXCH_BASES_NA,15_NR_NA,Exch. basic cations (Na++) - meq per 100g of soil - Not recorded
+LaboratoryMeasurement,EXCH_BASES_CA,15A1_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15A1_Ca_MQ,Exchangeable calcium
+LaboratoryMeasurement,NA,15A1_CEC,Exchangeable bases
+LaboratoryMeasurement,EXCH_BASES_K,15A1_K,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15A1_MG,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15A1_Mg_MQ,Exchangeable magnesium
+LaboratoryMeasurement,NA,15A1_MN,NA
+LaboratoryMeasurement,EXCH_BASES_NA,15A1_NA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15A2_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15A2_CEC,"Exchangeable bases- 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15A2_K,"Exchangeable bases- 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15A2_MG,"Exchangeable bases- 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15A2_NA,"Exchangeable bases- 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15A3_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CEC,15A3_CEC,"Exchangeable bases- 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_K,15A3_K,"Exchangeable bases- 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_MG,15A3_MG,"Exchangeable bases- 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_NA,15A3_NA,"Exchangeable bases- 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CA,15B1_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15B1_CEC,"CEC - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15B1_K,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15B1_MG,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15B1_NA,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15B2_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15B2_CEC,"CEC - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15B2_K,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15B2_MG,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15B2_NA,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15B3_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CEC,15B3_CEC,"CEC - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_K,15B3_K,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_MG,15B3_MG,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_NA,15B3_NA,"Exchangeable bases and CEC - 1M ammonium chloride at pH 7.0, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CA,15C1_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - alcoholic 1M ammonium chloride at pH 8.5, pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15C1_Ca_MQ,Exchangeable calcium
+LaboratoryMeasurement,EXCH_BASES_CEC,15C1_CEC,"CEC - alcoholic 1M ammonium chloride at pH 8.5, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15C1_K,"Exchangeable bases and CEC - alcoholic 1M ammonium chloride at pH 8.5, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15C1_MG,"Exchangeable bases and CEC - alcoholic 1M ammonium chloride at pH 8.5, pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15C1_Mg_MQ,Exchangeable magnesium
+LaboratoryMeasurement,EXCH_BASES_NA,15C1_NA,"Exchangeable bases and CEC - alcoholic 1M ammonium chloride at pH 8.5, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15C2_CA,Exchangeable divalent cations and CEC - MIR diffuse reflectance spectroscopy
+LaboratoryMeasurement,NA,15C2_Ca_MQ,Exchangeable calcium - MIR QLD Calibration 1
+LaboratoryMeasurement,EXCH_BASES_CEC,15C2_CEC,Exchangeable divalent cations and CEC - MIR diffuse reflectance spectroscopy
+LaboratoryMeasurement,CEC,15C2_CEC_M,Cation exchange capacity - MIR QLD Calibration 1
+LaboratoryMeasurement,EXCH_BASES_MG,15C2_MG,Exchangeable divalent cations and CEC - MIR diffuse reflectance spectroscopy
+LaboratoryMeasurement,NA,15C2_Mg_MQ,Exchangeable magnesium - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,15D1_AL,NA
+LaboratoryMeasurement,EXCH_BASES_CA,15D1_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; manual leach"
+LaboratoryMeasurement,EXCH_BASES_CEC,15D1_CEC,"CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; manual leach"
+LaboratoryMeasurement,EXCH_BASES_K,15D1_K,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; manual leach"
+LaboratoryMeasurement,EXCH_BASES_MG,15D1_MG,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; manual leach"
+LaboratoryMeasurement,EXCH_BASES_NA,15D1_NA,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; manual leach"
+LaboratoryMeasurement,EXCH_BASES_CA,15D2_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; automatic extractor"
+LaboratoryMeasurement,EXCH_BASES_CEC,15D2_CEC,"CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; automatic extractor"
+LaboratoryMeasurement,EXCH_BASES_K,15D2_K,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; mautomatic"
+LaboratoryMeasurement,EXCH_BASES_MG,15D2_MG,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; mautomatic"
+LaboratoryMeasurement,EXCH_BASES_NA,15D2_NA,"Exchangeable bases and CEC - 1M ammonium acetate at pH 7.0, pretreatment for soluble salts; mautomatic"
+LaboratoryMeasurement,EXCH_BASES_CA,15D3_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) - 1M ammonium acetate at pH 7.0, rapid method with no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15D3_K,"Exchangeable bases - 1M ammonium acetate at pH 7.0, rapid method with no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15D3_MG,"Exchangeable bases - 1M ammonium acetate at pH 7.0, rapid method with no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15D3_NA,"Exchangeable bases - 1M ammonium acetate at pH 7.0, rapid method with no pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15E1,Exchangeable bases
+LaboratoryMeasurement,EXCH_BASES_AEC,15E1_AEC,"Exchangeable bases , CEC and AEC by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_AL,15E1_AL,"Exchangeable Al - by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15E1_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15E1_CEC,"CEC by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_H,15E1_H,"Exchangeable H - by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15E1_K,"Exchangeable bases, CEC and AEC by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15E1_MG,"Exchangeable bases, CEC and AEC by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,NA,15E1_MN,NA
+LaboratoryMeasurement,EXCH_BASES_NA,15E1_NA,"Exchangeable bases, CEC and AEC by compulsive exchange, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_AEC,15E2_AEC,"Exchangeable bases, CEC and AEC by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CA,15E2_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15E2_CEC,"CEC by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15E2_K,"Exchangeable bases, CEC and AEC by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15E2_MG,"Exchangeable bases, CEC and AEC by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15E2_NA,"Exchangeable bases, CEC and AEC by compulsive exchange, pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_AEC,15E3_AEC,"Exchangeable bases, CEC and AEC by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CA,15E3_CA,"Exchangeable bases (Ca2+,Mg2+,Na+,K+) by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CEC,15E3_CEC,"CEC by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_K,15E3_K,"Exchangeable bases, CEC and AEC by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_MG,15E3_MG,"Exchangeable bases, CEC and AEC by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_NA,15E3_NA,"Exchangeable bases, CEC and AEC by compulsive exchange, adjusted for soluble sodium"
+LaboratoryMeasurement,EXCH_BASES_CA,15F1_CA,"Exchangeable bases by 0.01M silver-thiourea (AgTU)+, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_CEC,15F1_CEC,"Exchangeable bases by 0.01m (AgTU)+, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_K,15F1_K,"Exchangeable bases by 0.01m (AgTU)+, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_MG,15F1_MG,"Exchangeable bases by 0.01m (AgTU)+, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_BASES_NA,15F1_NA,"Exchangeable bases by 0.01m (AgTU)+, no pretreatment for soluble salts"
+LaboratoryMeasurement,EXCH_AL,15F2,Exchangeable aluminium by 0.01m (AgTU)+
+LaboratoryMeasurement,EXCH_AL,15F2_AL,Exchangeable Al (%) - Silver Thiorea
+LaboratoryMeasurement,CEC,15F3,CEC by 0.01M silver-thiourea (AgTU)+
+LaboratoryMeasurement,EXCH_AL,15F4,Exchangeable aluminium by 1M ammonium acetate (pH5.8). Abdullah and Riley (1966).
+LaboratoryMeasurement,EXCH_ACIDITY,15G_C,Exchange acidity (hydrogen and aluminium) - meq per 100g of soil - By 1M KCl exch. acidity by titration to pH 8.4
+LaboratoryMeasurement,EXCH_AL,15G_C_AL1,Exchangeable aluminium - meq per 100g of soil - Aluminium By difference of C and A or B
+LaboratoryMeasurement,EXCH_AL,15G_C_AL2,Exchangeable aluminium - meq per 100g of soil - Aluminium By KCl extraction and detremination By AAS
+LaboratoryMeasurement,EXCH_H,15G_C_H1,Exchangeable hydrogen - meq per 100g of soil - Hydrogen By back titration of A or B
+LaboratoryMeasurement,EXCH_H,15G_H,Hydrogen Cation - meq per 100g of soil - 1M KCl Exch. acidity By titration to pH 8.4
+LaboratoryMeasurement,EXCH_ACIDITY,15G1,Exchange acidity (hydrogen and aluminium) by 1M potassium chloride
+LaboratoryMeasurement,NA,15G1_Acid,Exchange acidity (hydrogen and aluminium) by 1M potassium chloride - Exchange Acidity
+LaboratoryMeasurement,EXCH_AL,15G1_AL,Aluminium Cation - meq per 100g of soil - 1M KCl Exch. Acidity By titration to pH 8.0
+LaboratoryMeasurement,EXCH_H,15G1_H,Hydrogen Cation - meq per 100g of soil - 1M KCl Exch. Acidity By titration to pH 8.0
+LaboratoryMeasurement,NA,15G2,Exch. Al saturation
+LaboratoryMeasurement,NA,15G2_Al_MQ,Exchangeable aluminium
+LaboratoryMeasurement,EXCH_ACIDITY,15H1,Exchange acidity by TEA
+LaboratoryMeasurement,CEC,15I1,CEC measurement - distillation of ammonium ions
+LaboratoryMeasurement,CEC,15I2,CEC measurement - automated determination of ammonium ions
+LaboratoryMeasurement,CEC,15I3,CEC measurement - automated determination of ammonium and chloride ions
+LaboratoryMeasurement,CEC,15I4,CEC measurement - titration of ammonium and chloride ions
+LaboratoryMeasurement,BASES,15J_BASES,Sum of Bases
+LaboratoryMeasurement,ECEC,15J_H,Sum of Ex. cations + Ex. acidity - Sum of basic exch. cations and exch. (Hydrogen)
+LaboratoryMeasurement,ECEC,15J1,Effective CEC
+LaboratoryMeasurement,ECEC,15J2_MQ02,Effective cation exchange capacity
+LaboratoryMeasurement,CEC,15K1,CEC - pH 8.2
+LaboratoryMeasurement,BSP,15L1,Base saturation percentage (BSP)
+LaboratoryMeasurement,NA,15L1_a,NA
+LaboratoryMeasurement,CATION_RATIO,15M1,Cation ratio
+LaboratoryMeasurement,CA,15M1_Ca/CE,Calcium to cation exchange capacity ratio
+LaboratoryMeasurement,CA/MG,15M1_Ca/Mg,Cation ratio Ca/Mg
+LaboratoryMeasurement,NA,15M1_K/CEC,Potassium to cation exchange capacity ratio
+LaboratoryMeasurement,NA,15M1_Mg/Ca,Magnesium to calcium ratio
+LaboratoryMeasurement,NA,15M1_Mg/CE,Magnesium to cation exchange capacity ratio
+LaboratoryMeasurement,MG/K,15M1_Mg/K,Cation ratio Mg/K
+LaboratoryMeasurement,NA/K,15M1_Na/K,Cation ratio Na/K
+LaboratoryMeasurement,ESP,15N1,Exchangeable sodium percentage (ESP)
+LaboratoryMeasurement,NA,15N1_a,NA
+LaboratoryMeasurement,NA,15N1_b,NA
+LaboratoryMeasurement,AL_SAT,15O1,Percenatge aluminium saturation
+LaboratoryMeasurement,CEC/CLAY,15P1,CEC/Clay ratio
+LaboratoryMeasurement,NA,15Z1,H
+LaboratoryMeasurement,CEC,15Z1_CEC/c,Cation exchange capacity:clay
+LaboratoryMeasurement,LIME_RATE,16A1,Calculated lime rate - from exchangeable aluminium
+LaboratoryMeasurement,LIME_RATE,16B1,Calculated lime rate - Cregan
+LaboratoryMeasurement,LIME_REQ,16C1,Lime requirement - Mehlich single buffer
+LaboratoryMeasurement,NA,16C1_5.5,Lime requirement at pH 5.5
+LaboratoryMeasurement,NA,16C1_6.0,Lime requirement at pH 6.0
+LaboratoryMeasurement,NA,16C1_6.5,Lime requirement at pH 6.5
+LaboratoryMeasurement,LIME_REQ,16D1,Lime requirement - Dunn titration curves
+LaboratoryMeasurement,POTASSIUM,17A_HF+,Total element - K (%) - HF/HCl04 Digest
+LaboratoryMeasurement,POTASSIUM,17A_NR,Total element - K (%) - Not recorded
+LaboratoryMeasurement,POTASSIUM,17A1,Total Potassium - X-ray fluorescence
+LaboratoryMeasurement,TOTAL_ELEMENTS,17A1_K,Total Potassium - X-ray fluorescence
+LaboratoryMeasurement,NA,17A1_K_MQ0,Total potassium - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,17A2_Cu,Total element - Cu(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,NA,17A2_Fe,Total element - Fe(%) - HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,17A2_K,"Total Potassium - microwave assisted digestion, determination by AAS"
+LaboratoryMeasurement,NA,17A2_Mn,Total element - Mn(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,NA,17A2_Zn,Total element - Zn(mg/kg) - HF/HClO4 Digest
+LaboratoryMeasurement,NA,17B1,"0.01M CaCl2 extractable K, ICP"
+LaboratoryMeasurement,TOTAL_ELEMENTS,17B1_K,"Psuedo-total Potassium - reverse aqua regia block digestion, determination by AAS"
+LaboratoryMeasurement,AL,17B2_Al,Aluminium
+LaboratoryMeasurement,AS,17B2_As,Arsenic
+LaboratoryMeasurement,CA,17B2_Ca,Calcium
+LaboratoryMeasurement,NA,17B2_Co,Cobalt
+LaboratoryMeasurement,CR,17B2_Cr,Chromium
+LaboratoryMeasurement,NA,17B2_Cu,Copper
+LaboratoryMeasurement,NA,17B2_Fe,Iron
+LaboratoryMeasurement,TOTAL_ELEMENTS,17B2_K,"Psuedo-total Potassium - reverse aqua regia digestion, determination by atomic spectrometry"
+LaboratoryMeasurement,NA,17B2_Mg,Magnesium
+LaboratoryMeasurement,NA,17B2_Mn,Manganese
+LaboratoryMeasurement,NA,17B2_Mo,Molybdenum
+LaboratoryMeasurement,NA,17B2_Na,Sodium
+LaboratoryMeasurement,NA,17B2_Ni,Nickel
+LaboratoryMeasurement,NA,17B2_P,Phosphorus
+LaboratoryMeasurement,NA,17B2_Pb,Lead
+LaboratoryMeasurement,NA,17B2_S,Sulphur
+LaboratoryMeasurement,NA,17B2_Zn,Zinc
+LaboratoryMeasurement,TOTAL_ELEMENTS,17C1_K,"Psuedo-total Potassium - conventional aqua regia block digestion, determination by atomic spectrometry"
+LaboratoryMeasurement,NA,17X1_Al,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_As,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Ca,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Co,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Cr,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Cu,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Fe,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_K,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Mg,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Mn,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Mo,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Na,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Ni,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_P,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Pb,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_S,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17X1_Zn,Soil: Elements; HNO3+HClO4+H2O2 microwave; ICP
+LaboratoryMeasurement,NA,17Z1,Total P
+LaboratoryMeasurement,NA,18_NR,NA
+LaboratoryMeasurement,POTASSIUM,18A1,Bicarbonate-extractable potassium
+LaboratoryMeasurement,NA,18A1_NR,NA
+LaboratoryMeasurement,POTASSIUM,18B1,Hydrochloric acid - extractable potassium
+LaboratoryMeasurement,POTASSIUM,18B2,Sulfuric acid (10%)- extractable potassium
+LaboratoryMeasurement,POTASSIUM,18C1,Boiling 1 M nitric acid  - extractable potassium
+LaboratoryMeasurement,CADMIUM,18D1,0.1 M calcium chloride - extractable Cadmium
+LaboratoryMeasurement,CADMIUM,18E1,0.01 M calcium chloride - extractable Cadmium
+LaboratoryMeasurement,POTASSIUM,18E2,Fluoride-extractable potassium (Bray 1-K) - AAS
+LaboratoryMeasurement,AL,18F1_AL,Mehlich 3 - extractable Aluminium
+LaboratoryMeasurement,BORON,18F1_B,Mehlich 3 - extractable Boron
+LaboratoryMeasurement,CALCIUM,18F1_CA,Mehlich 3 - extractable Calcium
+LaboratoryMeasurement,CD,18F1_Cd,Cadmium
+LaboratoryMeasurement,CU,18F1_CU,Mehlich 3 - extractable Copper
+LaboratoryMeasurement,FE,18F1_FE,Mehlich 3 - extractable Iron
+LaboratoryMeasurement,POTASSIUM,18F1_K,Mehlich 3 - extractable Potassium
+LaboratoryMeasurement,MG,18F1_MG,Mehlich 3 - extractable Magnesium
+LaboratoryMeasurement,MN,18F1_MN,Mehlich 3 - extractable Manganese
+LaboratoryMeasurement,NA,18F1_NA,Mehlich 3 - extractable Sodium
+LaboratoryMeasurement,PHORPHORUS,18F1_P,Mehlich 3 - extractable Phosporus
+LaboratoryMeasurement,SULFUR,18F1_S,Mehlich 3 - extractable Sulfur
+LaboratoryMeasurement,ZN,18F1_ZN,Mehlich 3 - extractable Zinc
+LaboratoryMeasurement,POTASSIUM,18F2,Mehlich 3 - extractable Potassium - colour finish
+LaboratoryMeasurement,POTASSIUM,18G1,Reserve soil K+ by copper-modified sodium tetraphenylboron extraction
+LaboratoryMeasurement,CARBONATES,19_COL,Carbonates - Collins Calcimeter
+LaboratoryMeasurement,CARBONATES,19A1,Carbonates - rapid titration
+LaboratoryMeasurement,CARBONATES,19A2,Acid Neutralizing Capacity - 0.1 M HCl digest & back titration
+LaboratoryMeasurement,CARBONATES,19B_NR,Calcium Carbonate (CaCO3) - Not recorded
+LaboratoryMeasurement,CARBONATES,19B1,Carbonates - manometric
+LaboratoryMeasurement,CARBONATES,19B2,Carbonates - transducer
+LaboratoryMeasurement,CARBONATES,19C1,Spot field test for the presence of soil carbonates with dilute HCl
+LaboratoryMeasurement,CARBONATES,19D1,Field test for soil carbonates with dilute HCl and effervescence class assessment
+LaboratoryMeasurement,NA,1A1,Field sampling - soil and land use surveys
+LaboratoryMeasurement,NA,1A2,Field sampling - diagnositc
+LaboratoryMeasurement,NA,1B1,Laboratory preperation
+LaboratoryMeasurement,NA,1X1_Al,Total Al XRF
+LaboratoryMeasurement,NA,1X1_As,Total As XRF
+LaboratoryMeasurement,NA,1X1_Ba,Total Ba XRF
+LaboratoryMeasurement,NA,1X1_Br,Total Br XRF
+LaboratoryMeasurement,NA,1X1_Ca,Total Ca XRF
+LaboratoryMeasurement,NA,1X1_Cd,Total Cd XRF
+LaboratoryMeasurement,NA,1X1_Co,Total Co XRF
+LaboratoryMeasurement,NA,1X1_Cr,Total Cr XRF
+LaboratoryMeasurement,NA,1X1_Cu,Total Cu XRF
+LaboratoryMeasurement,NA,1X1_Fe,Total Fe XRF
+LaboratoryMeasurement,NA,1X1_Hg,Total Hg XRF
+LaboratoryMeasurement,NA,1X1_Mg,Total Mg XRF
+LaboratoryMeasurement,NA,1X1_Mn,Total Mn XRF
+LaboratoryMeasurement,NA,1X1_Na,Total Na XRF
+LaboratoryMeasurement,NA,1X1_Ni,Total Ni XRF
+LaboratoryMeasurement,NA,1X1_Pb,Total Pb XRF
+LaboratoryMeasurement,NA,1X1_Si,Total Si XRF
+LaboratoryMeasurement,NA,1X1_Sr,Total Sr XRF
+LaboratoryMeasurement,NA,1X1_Ti,Total Ti XRF
+LaboratoryMeasurement,NA,1X1_V,Total V XRF
+LaboratoryMeasurement,NA,1X1_Zn,Total Zn XRF
+LaboratoryMeasurement,LOSS_ON_IGNITION,2_LOI,Loss on Ignition (%)
+LaboratoryMeasurement,SULFUR,20A1,Chromium reducible S
+LaboratoryMeasurement,NA,20A2,Total Sulfur - Leco
+LaboratoryMeasurement,NA,20A3,"Total Sulfur - Combustion, titration end point"
+LaboratoryMeasurement,NA,20A4,"Total Sulfur - Combustion, dry ashing NaCO3, AgBr"
+LaboratoryMeasurement,NA,20A5,Total Sulfur - Alkaline Na hypobromite oxidation + reduction hydroiodic acid reduction
+LaboratoryMeasurement,NA,20A6,"Total Sulfur - Acid oxidation using nitric, perchloric, phosphoric, hydrochloric acids"
+LaboratoryMeasurement,NA,20A7,Total Sulfur - Bromine-Nitric Acid oxidation (Vogel's quantitative inorganic analysis)
+LaboratoryMeasurement,NA,20A9,Total Sulfur - Summation from procedure 20D
+LaboratoryMeasurement,TAA,20B1,SPOCAS acid trail - titratable actual acidity (TAA)
+LaboratoryMeasurement,SU,20Ba,"4M HCl extractable Sulfur - sulfate, turbidmetric"
+LaboratoryMeasurement,SU,20Bb,"4M HCl extractable Sulfur - sulfate, gravimetric"
+LaboratoryMeasurement,SU,20Bc,"4M HCl extractable Sulfur - sulfate, automated colour"
+LaboratoryMeasurement,SU,20Bd,"4M HCl extractable Sulfur - sulfate, ion chromatography"
+LaboratoryMeasurement,SU,20Be,"4M HCl extractable Sulfur - sulfur, ICPAES"
+LaboratoryMeasurement,SU,20Bf,"4M HCl extractable Sulfur - sulfate, automated turbidmetric"
+LaboratoryMeasurement,SU,20Bg,"4M HCl extractable Sulfur - sulfate, indirect, barium remaining by AAS"
+LaboratoryMeasurement,CA,20Bh,"4M HCl extractable calcium, ICPAES"
+LaboratoryMeasurement,CA,20Bj,"4M HCl extractable calcium, atomic absorption (AAS)"
+LaboratoryMeasurement,CA,20Bk,"4M HCl extractable calcium, titration EDTA"
+LaboratoryMeasurement,MG,20Bm,"4M HCl extractable magnesium, ICPAES"
+LaboratoryMeasurement,MG,20Bn,"4M HCl extractable magnesium, atomic absorption (AAS)"
+LaboratoryMeasurement,MG,20Bp,"4M HCl extractable magnesium, titration EDTA"
+LaboratoryMeasurement,NA,20Bs,"4M HCl extractable sodium, ICPAES"
+LaboratoryMeasurement,NA,20Bt,"4M HCl extractable sodium, atomic absorption (AAS)"
+LaboratoryMeasurement,NA,20Bu,"4M HCl extractable sodium, flame emission"
+LaboratoryMeasurement,K,20Bv,"4M HCl extractable potassium, ICPAES"
+LaboratoryMeasurement,MG,20Bw,"4M HCl extractable potassium, atomic absorption (AAS)"
+LaboratoryMeasurement,K,20Bx,"4M HCl extractable potassium, flame emission"
+LaboratoryMeasurement,ANC,20C1_ANC,SPOCAS acid trail - Net Acid Neutralising Capacity (ANC)
+LaboratoryMeasurement,TPA,20C1_TPA,SPOCAS acid trail - titratable peroxide acidity (TPA)
+LaboratoryMeasurement,NA,20C1a,"Total Oxidisable Sulfur by XRF and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C1b,"Total Oxidisable Sulfur by XRF and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C1c,"Total Oxidisable Sulfur by XRF and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C1d,"Total Oxidisable Sulfur by XRF and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C1e,"Total Oxidisable Sulfur by XRF and ICPAES, S"
+LaboratoryMeasurement,NA,20C1f,"Total Oxidisable Sulfur by XRF and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C1g,"Total Oxidisable Sulfur by XRF and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C2a,"Total Oxidisable Sulfur by Leco and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C2b,"Total Oxidisable Sulfur by Leco and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C2c,"Total Oxidisable Sulfur by Leco and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C2d,"Total Oxidisable Sulfur by Leco and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C2e,"Total Oxidisable Sulfur by Leco and ICPAES, S"
+LaboratoryMeasurement,NA,20C2f,"Total Oxidisable Sulfur by Leco and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C2g,"Total Oxidisable Sulfur by Leco and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C3a,"Total Oxidisable Sulfur by Combustion, titration and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C3b,"Total Oxidisable Sulfur by Combustion, titration and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C3c,"Total Oxidisable Sulfur by Combustion, titration and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C3d,"Total Oxidisable Sulfur by Combustion, titration and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C3e,"Total Oxidisable Sulfur by Combustion, titration and ICPAES, S"
+LaboratoryMeasurement,NA,20C3f,"Total Oxidisable Sulfur by Combustion, titration and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C3g,"Total Oxidisable Sulfur by Combustion, titration and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C4a,"Total Oxidisable Sulfur by Combustion, dry ashing and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C4b,"Total Oxidisable Sulfur by Combustion, dry ashing and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C4c,"Total Oxidisable Sulfur by Combustion, dry ashing and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C4d,"Total Oxidisable Sulfur by Combustion, dry ashing and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C4e,"Total Oxidisable Sulfur by Combustion, dry ashing and ICPAES, S"
+LaboratoryMeasurement,NA,20C4f,"Total Oxidisable Sulfur by Combustion, dry ashing and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C4g,"Total Oxidisable Sulfur by Combustion, dry ashing and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C5a,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C5b,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C5c,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C5d,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C5e,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and ICPAES, S"
+LaboratoryMeasurement,NA,20C5f,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C5g,"Total Oxidisable Sulfur by Alkaline Na ox + HI red and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C6a,"Total Oxidisable Sulfur by Acid ox and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C6b,"Total Oxidisable Sulfur by Acid ox and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C6c,"Total Oxidisable Sulfur by Acid ox and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C6d,"Total Oxidisable Sulfur by Acid ox and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C6e,"Total Oxidisable Sulfur by Acid ox and ICPAES, S"
+LaboratoryMeasurement,NA,20C6f,"Total Oxidisable Sulfur by Acid ox and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C6g,"Total Oxidisable Sulfur by Acid ox and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20C7a,"Total Oxidisable Sulfur by Br-Nitric ox and turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C7b,"Total Oxidisable Sulfur by Br-Nitric ox and Gravimetric, SO4"
+LaboratoryMeasurement,NA,20C7c,"Total Oxidisable Sulfur by Br-Nitric ox and Auto colour, SO4"
+LaboratoryMeasurement,NA,20C7d,"Total Oxidisable Sulfur by Br-Nitric ox and Ion chromo, SO4"
+LaboratoryMeasurement,NA,20C7e,"Total Oxidisable Sulfur by Br-Nitric ox and ICPAES, S"
+LaboratoryMeasurement,NA,20C7f,"Total Oxidisable Sulfur by Br-Nitric ox and Auto turbidmetric, SO4"
+LaboratoryMeasurement,NA,20C7g,"Total Oxidisable Sulfur by Br-Nitric ox and Indirect Ba by AAS, SO4"
+LaboratoryMeasurement,NA,20D1,Total oxidisable sulfur prewash 4M HCl and H2O - XRF
+LaboratoryMeasurement,CA,20D1_CA,1 M KCl - extractable Ca
+LaboratoryMeasurement,MG,20D1_MG,1 M KCl - extractable Mg
+LaboratoryMeasurement,SULFUR,20D1_S,1 M KCl - extractable S
+LaboratoryMeasurement,NA,20D2,Total oxidisable sulfur prewash 4M HCl and H2O - Leco
+LaboratoryMeasurement,NA,20D3,"Total oxidisable sulfur prewash 4M HCl and H2O - Combustion, titration end point"
+LaboratoryMeasurement,NA,20D4,"Total oxidisable sulfur prewash 4M HCl and H2O - Combustion, dry ashing NaCO3, AgBr"
+LaboratoryMeasurement,NA,20D5,Total oxidisable sulfur prewash 4M HCl and H2O - Alkaline Na hypobromite oxidation + reduction hydroiodic acid reduction
+LaboratoryMeasurement,NA,20D6,"Total oxidisable sulfur prewash 4M HCl and H2O - Acid oxidation using nitric, perchloric, phosphoric, hydrochloric acids"
+LaboratoryMeasurement,CA,20E1_CA,1 M KCl - extractable Ca after peroxide oxidation
+LaboratoryMeasurement,MG,20E1_MG,1 M KCl - extractable Mg after peroxide oxidation
+LaboratoryMeasurement,SULFUR,20E1_S,1 M KCl - extractable S after peroxide oxidation
+LaboratoryMeasurement,SULFUR,20F1,"Sulfur - 4 M HCl extraction, ICPAES"
+LaboratoryMeasurement,SULFUR,20F2,"Sulfur - 4 M HCl extraction, ion chromatography"
+LaboratoryMeasurement,SULFUR,20G1,Peroxide residual acid soluble sulfur
+LaboratoryMeasurement,ANC,20H1,Acid neutralising capacity - acid reacted and back titration
+LaboratoryMeasurement,ANC,20I1,Acid neutralising capacity - from SPOCAS
+LaboratoryMeasurement,NA,20J,S nas
+LaboratoryMeasurement,ASS_HAZARD,20J1_RQNC,Field approximation of ASS hazard
+LaboratoryMeasurement,ASS_HAZARD,20J1_TAA,Field approximation of ASS hazard
+LaboratoryMeasurement,ASS_HAZARD,20J1_TSA,Field approximation of ASS hazard
+LaboratoryMeasurement,ASS_PRESENCE,20K1,Quick field approximation of ASS presence and associated lime reqirement for drain spoil
+LaboratoryMeasurement,NA,21A,"pH of filtered 1:20 1M KCl extract, overnight shake (TAA)"
+LaboratoryMeasurement,NA,21Af,pH done in field on saturated soil sample using pH probe
+LaboratoryMeasurement,NA,21B,pH of filtered 1:20 1M KCl after peroxide digestion
+LaboratoryMeasurement,NA,21Bf,pH done in field of 30% peroxide reaction
+LaboratoryMeasurement,NA,21C,KCl extractable S
+LaboratoryMeasurement,NA,21Ca,"KCL extractable S - sulfate, turbidmetric"
+LaboratoryMeasurement,NA,21Cb,"KCL extractable S - sulfate, gravimetric"
+LaboratoryMeasurement,NA,21Cc,"KCL extractable S - sulfate, automated colour"
+LaboratoryMeasurement,NA,21Cd,"KCL extractable S - sulfate, ion chromatography"
+LaboratoryMeasurement,NA,21Ce,"KCL extractable S - sulfur, ICPAES"
+LaboratoryMeasurement,NA,21Cf,"KCL extractable S - sulfate, automated turbidmetric"
+LaboratoryMeasurement,NA,21Cg,"KCL extractable S - sulfate, indirect, barium remaining by AAS"
+LaboratoryMeasurement,NA,21Ch,"KCL extractable S - calcium, ICPAES"
+LaboratoryMeasurement,NA,21Cj,"KCL extractable S - calcium, atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Ck,"KCL extractable S - calcium, titration EDTA"
+LaboratoryMeasurement,NA,21Cm,"KCL extractable S - magnesium, ICPAES"
+LaboratoryMeasurement,NA,21Cn,"KCL extractable S - magnesium, atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Cp,"KCL extractable S - magnesium, titration EDTA"
+LaboratoryMeasurement,NA,21Cs,"KCL extractable S - sodium, ICPAES"
+LaboratoryMeasurement,NA,21Ct,"KCL extractable S - sodium, atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Cu,"KCL extractable S - sodium, flame emission"
+LaboratoryMeasurement,NA,21D,Peroxide sulfur after peroxide digestion
+LaboratoryMeasurement,NA,21Da,"KCl Extractable sulfur after ox - sulfate, turbidmetric"
+LaboratoryMeasurement,NA,21Db,"KCl Extractable sulfur after ox - sulfate, gravimetric"
+LaboratoryMeasurement,NA,21Dc,"KCl Extractable sulfur after ox - sulfate, automated colour"
+LaboratoryMeasurement,NA,21Dd,"KCl Extractable sulfur after ox - sulfate, ion chromatography"
+LaboratoryMeasurement,NA,21De,"1M KCL,1:20,after ox.,ICP"
+LaboratoryMeasurement,NA,21Df,KCl Extractable sulfur after ox - automated turbidmetric
+LaboratoryMeasurement,NA,21Dg,"KCl Extractable sulfur after ox - sulfate, indirect, barium remaining by AAS"
+LaboratoryMeasurement,NA,21E,Peroxide oxidisable S - 21D minus 21C
+LaboratoryMeasurement,NA,21Ee,Peroxide oxidisable S - 21De minus 21Ce
+LaboratoryMeasurement,NA,21F,Total Actual Acidity (TAA) in 1M KCl titrated to pH 5.5
+LaboratoryMeasurement,NA,21G,Total Potential Acidity (TPA) in 1M KCl peroxide digestion titrated to pH 5.5
+LaboratoryMeasurement,NA,21H,Total Sulfidic Acidity (TSA) - 21G minus 21F
+LaboratoryMeasurement,NA,21J,TAA - calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,21K,TPA -calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,21L,TSA - calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,21M,Na extracted in 1M KCl (TAA)
+LaboratoryMeasurement,NA,21Ms,"Sodium, before ox. - ICPAES"
+LaboratoryMeasurement,NA,21Mt,"Sodium, before ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Mu,"Sodium, before ox. - flame emission"
+LaboratoryMeasurement,NA,21N,Na in peroxide digest (TPA)
+LaboratoryMeasurement,NA,21Ns,"Sodium, after ox. - ICPAES"
+LaboratoryMeasurement,NA,21Nt,"Sodium, after ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Nu,"Sodium, after ox. - flame emission"
+LaboratoryMeasurement,NA,21P,Na difference (21N minus 21M)
+LaboratoryMeasurement,NA,21Ps,Na difference (21Ns minus 21Ms)  - ICPAES
+LaboratoryMeasurement,NA,21Q,Quick residual neutralising capacity
+LaboratoryMeasurement,NA,21R,"Quick residual neutralising capacity (21Q), calculated as equivalent S%"
+LaboratoryMeasurement,NA,21S,Mg extracted in 1M KCl (TAA)
+LaboratoryMeasurement,NA,21Sm,"Magnesium, before ox. - ICPAES"
+LaboratoryMeasurement,NA,21Sn,"Magnesium, before ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Sp,"Magnesium, before ox. - titration EDTA"
+LaboratoryMeasurement,NA,21T,Mg in peroxide digest (TPA)
+LaboratoryMeasurement,NA,21Tm,"Magnesium, after ox. - ICPAES"
+LaboratoryMeasurement,NA,21Tn,"Magnesium, after ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,NA,21Tp,"Magnesium, after ox.  - titration EDTA"
+LaboratoryMeasurement,NA,21U,Mg reacted with acid generated by peroxide digestion (21T minus 21S)
+LaboratoryMeasurement,NA,21Um,Mg reacted with acid generated by peroxide digestion (21Tm minus 21Sm) - ICPAES
+LaboratoryMeasurement,CA,21V,Ca extracted in 1M KCl (TAA)
+LaboratoryMeasurement,CA,21Vh,"Calcium, before ox. - ICPAES"
+LaboratoryMeasurement,CA,21Vj,"Calcium, before ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,CA,21Vk,"Calcium, before ox.  - titration EDTA"
+LaboratoryMeasurement,CA,21W,Ca in peroxide digest (TPA)
+LaboratoryMeasurement,CA,21Wh,"Calcium, after ox. - ICPAES"
+LaboratoryMeasurement,CA,21Wj,"Calcium, after ox. - atomic absorption (AAS)"
+LaboratoryMeasurement,CA,21Wk,"Calcium, after ox. - titration EDTA"
+LaboratoryMeasurement,CA,21X,Ca reacted with acid generated by peroxide digestion (21W minus 21V)
+LaboratoryMeasurement,CA,21Xh,Ca reacted with acid generated by peroxide digestion (21Wh minus 21Vh) - ICPAES
+LaboratoryMeasurement,NA,22A,"Sulfur, Acid Volitile"
+LaboratoryMeasurement,S,22B,Chromium Reducible Sulfur
+LaboratoryMeasurement,NA,23A,"pH of 1:40 1M KCl suspension 4h shake, overnight stand (TAA)"
+LaboratoryMeasurement,NA,23A1,Tri-Acid Digest (Heavy metal) AAS hydride
+LaboratoryMeasurement,NA,23Af,pH done in field on saturated soil sample using pH probe
+LaboratoryMeasurement,NA,23B,pH of  1:25 suspension after peroxide digestion
+LaboratoryMeasurement,NA,23Bf,pH done in field of 30% peroxide reaction
+LaboratoryMeasurement,NA,23C,KCl Extractable sulfur before ox
+LaboratoryMeasurement,NA,23Ca,"KCl Extractable sulfur before ox - sulfate, turbidmetric"
+LaboratoryMeasurement,NA,23Cb,"KCl Extractable sulfur before ox - sulfate, gravimetric"
+LaboratoryMeasurement,NA,23Cc,"KCl Extractable sulfur before ox - sulfate, automated colour"
+LaboratoryMeasurement,NA,23Cd,"KCl Extractable sulfur before ox - sulfate, ion chromatography"
+LaboratoryMeasurement,NA,23Ce,KCl Extractable sulfur before ox - ICPAES
+LaboratoryMeasurement,NA,23Cf,KCl Extractable sulfur before ox - automated turbidmetric
+LaboratoryMeasurement,NA,23Cg,"KCl Extractable sulfur before ox - sulfate, indirect, barium remaining by AAS"
+LaboratoryMeasurement,NA,23D,KCl Extractable sulfur after ox - sulfate
+LaboratoryMeasurement,NA,23Da,"KCl Extractable sulfur after ox - sulfate, turbidmetric"
+LaboratoryMeasurement,NA,23Db,"KCl Extractable sulfur after ox - sulfate, gravimetric"
+LaboratoryMeasurement,NA,23Dc,"KCl Extractable sulfur after ox - sulfate, automated colour"
+LaboratoryMeasurement,NA,23Dd,"KCl Extractable sulfur after ox - sulfate, ion chromatography"
+LaboratoryMeasurement,NA,23De,KCl Extractable sulfur after ox - ICPAES
+LaboratoryMeasurement,NA,23Df,KCl Extractable sulfur after ox - automated turbidmetric
+LaboratoryMeasurement,NA,23Dg,"KCl Extractable sulfur after ox - sulfate, indirect, barium remaining by AAS"
+LaboratoryMeasurement,NA,23E,Peroxide oxidisable S - 21D minus 21C
+LaboratoryMeasurement,NA,23Ee,Peroxide oxidisable S - 21D minus 21C- ICPAES
+LaboratoryMeasurement,NA,23F,Titratable Actual Acidity (TAA) in 1M KCl titrated to pH 6.5
+LaboratoryMeasurement,NA,23G,Titratable Peroxide Acidity (TPA) in 1M KCl peroxide digestion titrated to pH 6.5
+LaboratoryMeasurement,NA,23H,Titratable Sulfidic Acidity (TSA) - 23G minus 23F
+LaboratoryMeasurement,NA,23Q,Excess Acid Neutralising Capacity Back Tit to pH 4.0 minus TPA tit to pH  6.5
+LaboratoryMeasurement,NA,23R,Residual acid extractable S after peroxide
+LaboratoryMeasurement,NA,23Re,Residual acid extractable S after peroxide -ICP
+LaboratoryMeasurement,NA,23S,"Magnesium extracted in 1M KCl, after TAA Titration"
+LaboratoryMeasurement,NA,23Sm,"Magnesium extracted in 1M KCl, after TAA Titration - ICPAES"
+LaboratoryMeasurement,NA,23Sn,"Magnesium extracted in 1M KCl, after TAA Titration - atomic absorption (AAS)"
+LaboratoryMeasurement,NA,23Sp,"Magnesium extracted in 1M KCl, after TAA Titration - titration EDTA"
+LaboratoryMeasurement,NA,23T,Magnesium in peroxide digest (after TPA digestion and titration)
+LaboratoryMeasurement,NA,23Tm,Magnesium in peroxide digest (after TPA digestion and titration) - ICPAES
+LaboratoryMeasurement,NA,23Tn,Magnesium in peroxide digest (after TPA digestion and titration) - atomic absorption (AAS)
+LaboratoryMeasurement,NA,23Tp,Magnesium in peroxide digest (after TPA digestion and titration) - titration EDTA
+LaboratoryMeasurement,NA,23U,Magnesium reacted with acid generated by peroxide digest (23T minus 23S)
+LaboratoryMeasurement,NA,23Um,Magnesium reacted with acid generated by peroxide digest (23Tm minus 23Sm) - ICPAES
+LaboratoryMeasurement,C/S,23V,"Calcium extracted in 1M KCl, after TAA Titration"
+LaboratoryMeasurement,CA,23Vh,"Calcium extracted in 1M KCl, after TAA Titration - ICPAES"
+LaboratoryMeasurement,CA,23Vj,"Calcium extracted in 1M KCl, after TAA Titration - atomic absorption (AAS)"
+LaboratoryMeasurement,CA,23Vk,"Calcium extracted in 1M KCl, after TAA Titration - titration EDTA"
+LaboratoryMeasurement,CA,23W,Calcium in peroxide digest (after TPA digestion and titration)
+LaboratoryMeasurement,CA,23Wh,Calcium in peroxide digest (after TPA digestion and titration)- ICPAES
+LaboratoryMeasurement,CA,23Wj,Calcium in peroxide digest (after TPA digestion and titration) - atomic absorption (AAS)
+LaboratoryMeasurement,CA,23Wk,Calcium in peroxide digest (after TPA digestion and titration) - titration EDTA
+LaboratoryMeasurement,CA,23X,Calcium reacted with acid generated by peroxide digest (23W minus 23V)
+LaboratoryMeasurement,CA,23Xh,Calcium reacted with acid generated by peroxide digest (23Wh minus 23Vh) - ICPAES
+LaboratoryMeasurement,MOISTURE_CONTENT,2A1,Air-dry moisture content
+LaboratoryMeasurement,MOISTURE_CONTENT,2A1_MQ01,Air dry moisture - MIR QLD Calibration 1
+LaboratoryMeasurement,MOISTURE_CONTENT,2A1_MQ02,Air dry moisture
+LaboratoryMeasurement,MOISTURE_CONTENT,2B1,As received moisture content
+LaboratoryMeasurement,MOISTURE_CONTENT,2C1,Moisture content - 10 mm tension
+LaboratoryMeasurement,MOISTURE_CONTENT,2D1,Moisture content - approximate saturation paste
+LaboratoryMeasurement,MOISTURE_RELEASE,2E1,"15 Bar, pressure plate"
+LaboratoryMeasurement,MOISTURE_RELEASE,2E1_MQ01,15 bar moisture - MIR QLD Calibration 1
+LaboratoryMeasurement,MOISTURE_RELEASE,2E1_MQ02,15 Bar moisture
+LaboratoryMeasurement,MOISTURE_RELEASE,2E2,"1/3 Bar, pressure plate"
+LaboratoryMeasurement,MOISTURE_RELEASE,2E3,"1/10 Bar, pressure plate"
+LaboratoryMeasurement,MOISTURE_RELEASE,2E4,"1 Bar, pressure plate"
+LaboratoryMeasurement,NA,2Y1,Available water capacity - calc (diff 2E2 and 2E1)
+LaboratoryMeasurement,NA,2Y2,PAWC
+LaboratoryMeasurement,NA,2Z1_R1,Aqu. Silt+Clay/Total Silt+Clay
+LaboratoryMeasurement,DISPERSION_INDEX,2Z1_R2,Dispersion ratio
+LaboratoryMeasurement,NA,2Z2_Clay,Clay fraction
+LaboratoryMeasurement,NA,2Z2_Clay_C,Clay (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,NA,2Z2_Clay_M,Clay - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,2Z2_Clay_N,Clay (%) - Not recorded
+LaboratoryMeasurement,NA,2Z2_Clay_P,Clay (%) - Plummet balance
+LaboratoryMeasurement,NA,2Z2_CS,Coarse sand fraction
+LaboratoryMeasurement,NA,2Z2_CS_CF,Coarse sand (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,NA,2Z2_CS_NR,Coarse sand (%) - Not recorded
+LaboratoryMeasurement,NA,2Z2_CS_PB,Coarse sand (%) - Plummet balance
+LaboratoryMeasurement,NA,2Z2_FS,Fine sand fraction
+LaboratoryMeasurement,NA,2Z2_FS_CF,Fine sand (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,NA,2Z2_FS_NR,Fine sand (%) - Not recorded
+LaboratoryMeasurement,NA,2Z2_FS_PB,Fine sand (%) - Plummet balance
+LaboratoryMeasurement,NA,2Z2_Grav,Gravel (%)
+LaboratoryMeasurement,NA,2Z2_Silt,Silt fraction
+LaboratoryMeasurement,NA,2Z2_Silt_C,Silt (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,NA,2Z2_Silt_M,Silt - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,2Z2_Silt_N,Silt (%) - Not recorded
+LaboratoryMeasurement,NA,2Z2_Silt_P,Silt (%) - Plummet balance
+LaboratoryMeasurement,NA,2Z2_TotSan,Total sand - MIR QLD Calibration 1
+LaboratoryMeasurement,DENSITY,2Z3,Bulk Density
+LaboratoryMeasurement,NA,2Z3_CS,CS
+LaboratoryMeasurement,NA,2Z3_FS,FS
+LaboratoryMeasurement,EC,3_C_B,Electrical conductivity or soluble salts - Total soluble salts %
+LaboratoryMeasurement,EC,3_NR,Electrical conductivity or soluble salts - Not recorded
+LaboratoryMeasurement,EC,3A_C_2.5,EC of 1:2.5 soil/water extract
+LaboratoryMeasurement,EC,3A_TSS,Electrical conductivity or soluble salts - Total soluble salts %
+LaboratoryMeasurement,EC,3A1,EC of 1:5 soil/water extract
+LaboratoryMeasurement,SOLUBLE_SALT,3B1,Estimation of soluble salt concentration
+LaboratoryMeasurement,IONIC_STRENGTH,3C1,Estimation of soil ionic strength
+LaboratoryMeasurement,REDOX_POTENTIAL,3D1,Redox potential (Eh; field)
+LaboratoryMeasurement,PH,4_NR,pH of soil - Not recorded
+LaboratoryMeasurement,PH,4A_C_1,pH of soil - pH of 1:1 soil/water suspension
+LaboratoryMeasurement,PH,4A_C_2.5,pH of soil - pH of 1:2.5 soil/water suspension
+LaboratoryMeasurement,PH,4A1,pH of 1:5 soil/water suspension
+LaboratoryMeasurement,NA,4A1_MQ01,pH aqueous - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,4A1_MQ02,pH aqueous
+LaboratoryMeasurement,NA,4B_AL,NA
+LaboratoryMeasurement,NA,4B_AL_NR,NA
+LaboratoryMeasurement,PH,4B_C_2.5,pH of soil - pH of 1:2.5 Soil/0.1M CaCl2 suspension
+LaboratoryMeasurement,PH,4B1,pH of 1:5 soil/0.01M calcium chloride extract - direct
+LaboratoryMeasurement,PH,4B2,pH of 1:5 soil/0.01M calcium chloride extract - following Method 4A1
+LaboratoryMeasurement,PH,4C_C_1,pH of 1:1 soil/1M potassium chloride suspension
+LaboratoryMeasurement,PH,4C1,pH of 1:5 soil/1M potassium chloride extract - direct
+LaboratoryMeasurement,PH,4C2,pH of 1:5 soil/1M potassium chloride extract - following Method 4A1
+LaboratoryMeasurement,PH,4D1,pH of sodium fluoride suspension
+LaboratoryMeasurement,PH,4E1,pH of hydrogen peroxide extract
+LaboratoryMeasurement,PH_CHANGE,4F1,pH change
+LaboratoryMeasurement,NA,4G_NR,NA
+LaboratoryMeasurement,PH,4G1,Field determination of pH
+LaboratoryMeasurement,CHLORIDE,5_C_B,Water soluble Chloride - Method recorded as B
+LaboratoryMeasurement,CHLORIDE,5_NR,Water soluble Chloride - Cl(%) - Not recordede
+LaboratoryMeasurement,DENSITY,503.01a,Bulk Density of small intact soil core (see report ERA2004-01)
+LaboratoryMeasurement,DENSITY,503.05a,Bulk Density fine earth + gravel (see report ERA2004-01)
+LaboratoryMeasurement,DENSITY,503.08a,Bulk Density fine earth only (see report ERA2004-01)
+LaboratoryMeasurement,CHLORIDE,5A_C_2.5,Chloride - 1:2.5 soil/water extract
+LaboratoryMeasurement,CHLORIDE,5A1,"Chloride - 1:5 soil/water extract, potentiometric titration"
+LaboratoryMeasurement,CHLORIDE,5A2,"Chloride - 1:5 soil/water extract, automated colour"
+LaboratoryMeasurement,CHLORIDE,5A2a,"Chloride - 1:5 soil/water extract, automated colour"
+LaboratoryMeasurement,CHLORIDE,5A2b,"Chloride - 1:5 soil/water extract, FIA"
+LaboratoryMeasurement,CHLORIDE,5A3a,"Chloride - 1:5 soil/water extract, ion chromatography (chemical suppression of eluent conductivity)"
+LaboratoryMeasurement,CHLORIDE,5A3b,"Chloride - 1:5 soil/water extract, ion chromatography (single column with electronic suppression of eluent conductivity)"
+LaboratoryMeasurement,CHLORIDE,5A4,"Chloride - 1:5 soil/water extract, ICPAES"
+LaboratoryMeasurement,CA/MG,5M1_Ca/Mg,Ca:Mg
+LaboratoryMeasurement,NACL,5Z1,Calculation based on chloride
+LaboratoryMeasurement,ORGANIC_CARBON,6_DC,Organic carbon (%) - Dry combustion
+LaboratoryMeasurement,ORGANIC_CARBON,6A1,Organic carbon - Walkley and Black
+LaboratoryMeasurement,ORGANIC_CARBON,6A1_UC,Organic carbon (%) - Uncorrected Walkley and Black method
+LaboratoryMeasurement,ORGANIC_CARBON,6B1,Total organic carbon - Heanes wet oxidation
+LaboratoryMeasurement,ORGANIC_CARBON,6B2,"Total organic carbon - high frequency induction furnace, volumetric"
+LaboratoryMeasurement,ORGANIC_CARBON,6B2a,"Total organic carbon - high frequency induction furnace, volumetric (no soil pretreatment)"
+LaboratoryMeasurement,ORGANIC_CARBON,6B2b,"Total organic carbon - high frequency induction furnace, infared/thermal (no soil pretreatment)"
+LaboratoryMeasurement,ORGANIC_CARBON,6B3,"Total organic carbon - high frequency induction furnace, infrared"
+LaboratoryMeasurement,ORGANIC_CARBON,6B4,Total organic carbon - infared diffuse reflectance spectroscopy
+LaboratoryMeasurement,ORGANIC_CARBON,6B4a,Total organic carbon - NIR reflectance spectroscopy
+LaboratoryMeasurement,ORGANIC_CARBON,6B4b,Total organic carbon - MIR reflectance spectroscopy
+LaboratoryMeasurement,NA,6B4b_MQ01,Total organic carbon
+LaboratoryMeasurement,NA,6B4b_MQ02,Total organic carbon
+LaboratoryMeasurement,NA,6B5,"Total Organic Carbon, (2)"
+LaboratoryMeasurement,ORGANIC_CARBON,6C1,Particulate organic C (POC)
+LaboratoryMeasurement,ORGANIC_CARBON,6D1,Pyrophosphate-extractable carbon
+LaboratoryMeasurement,ORGANIC_CARBON,6E1,Potassium permanganate oxidisable C (PPOC)
+LaboratoryMeasurement,CARBON,6F1,Charcoal-C
+LaboratoryMeasurement,CARBON,6G1,"Total organic matter, organic C and carbonate by loss-on-ignition"
+LaboratoryMeasurement,ORGANIC_CARBON,6Z,Organic carbon (%) - Not recorded
+LaboratoryMeasurement,NITROGEN,7_C_B,Total Nitrogen - method description not recorded
+LaboratoryMeasurement,NITROGEN,7_NR,Total nitrogen (%) - Not recorded
+LaboratoryMeasurement,NITROGEN,7A1,"Total nitrogen - semimicro Kjeldahl, steam distillation"
+LaboratoryMeasurement,NITROGEN,7A2,"Total nitrogen - semimicro Kjeldahl , automated colour"
+LaboratoryMeasurement,NITROGEN,7A2a,"Total nitrogen - semimicro Kjeldahl , automated colour, continuous segmented flow"
+LaboratoryMeasurement,NITROGEN,7A2b,"Total nitrogen - semimicro Kjeldahl , automated colour, FIA"
+LaboratoryMeasurement,NITROGEN,7A3,Total nitrogen (where nitrate > 20 mg N kg-1) - steam distillation
+LaboratoryMeasurement,NITROGEN,7A4,Total nitrogen (where nitrate > 20 mg N kg-1) - automated colour
+LaboratoryMeasurement,NITROGEN,7A5,"Total nitrogen - high frequency induction furnace, thermal conductivity"
+LaboratoryMeasurement,NITROGEN,7A6,Total nitrogen - infared diffuse reflectance spectroscopy
+LaboratoryMeasurement,NITROGEN,7A6a,Total nitrogen - NIR reflectance spectroscopy
+LaboratoryMeasurement,NITROGEN,7A6b,Total nitrogen - MIR reflectance spectroscopy
+LaboratoryMeasurement,NA,7A6B_MQ01,Total nitrogen - MIR QLD Calibration 1
+LaboratoryMeasurement,NA,7A6B_MQ02,Total nitrogen
+LaboratoryMeasurement,NA,7A7,"Total Nitrogen, (3)"
+LaboratoryMeasurement,NITRATE,7B1,Water soluble nitrate - automated colour
+LaboratoryMeasurement,NITRATE,7B1a,"Water soluble nitrate - automated colour, continuous segmented flow"
+LaboratoryMeasurement,NITRATE,7B1b,"Water soluble nitrate - automated colour, FIA"
+LaboratoryMeasurement,NITRATE,7B2,Water soluble nitrate - ion chromatography
+LaboratoryMeasurement,NITRATE,7C_CASO4,CaSO4 extractable nitrate. O'Brien and Fiore (1962)
+LaboratoryMeasurement,MIN_NITROGEN,7C1,Mineral nitrogen with 2M KCl - steam distillation
+LaboratoryMeasurement,AMMONIUM-N,7C1a,"Ammonium-N, in presence or absence of nitrite"
+LaboratoryMeasurement,(NITRATE+NITRITE)-N,7C1b,"(Nitrate+nitrite)-N, in presence of nitrite"
+LaboratoryMeasurement,(AMMONIUM+NO3+NO2)-N,7C1c,"(Ammonium+nitrate+nitrite)-N, in presence of nitrite"
+LaboratoryMeasurement,(AMMONIUM+NITRATE)-N,7C1d,"(Ammonium+nitrate)-N, in presence of nitrite"
+LaboratoryMeasurement,NITRATE-N,7C1e,"Nitrate-N, in presence of nitrite"
+LaboratoryMeasurement,NITRATE-N,7C1f,"Nitrate-N, in absence of nitrite"
+LaboratoryMeasurement,(AMMONIUM+NITRATE)-N,7C1g,"(Ammonium+nitrate)-N, in absence of nitrite"
+LaboratoryMeasurement,NITRITE-N,7C1h,Nitrite-N
+LaboratoryMeasurement,MIN_NITROGEN,7C2,Mineral nitrogen with 2M KCl - automated colour
+LaboratoryMeasurement,NA,7C2_NH4,"NH4-N - 2M KCl extractable,colorimetry"
+LaboratoryMeasurement,NA,7C2_NO2,"NO2-N - 2M KCl extractable,colorimetry"
+LaboratoryMeasurement,NA,7C2_NO3,"NO3-N - 2M KCl extractable,colorimetry"
+LaboratoryMeasurement,MIN_NITROGEN,7C2a,"Mineral nitrogen with 2M KCl - automated colour, continuous segmented flow"
+LaboratoryMeasurement,MIN_NITROGEN,7C2b,"Mineral nitrogen with 2M KCl - automated colour, FIA"
+LaboratoryMeasurement,NA,7D1,Nitrogen/Sulphur ratio
+LaboratoryMeasurement,MIN_NITROGEN,7D1a,"Potentially mineralisable N, hot KCl extraction - automated colour, continuous segmented flow"
+LaboratoryMeasurement,MIN_NITROGEN,7D1b,"Potentially mineralisable N, hot KCl extraction - automated colour, FIA"
+LaboratoryMeasurement,MIN_NITROGEN,7D1c,"Potentially mineralisable N, hot KCl extraction - NIR diffuse reflectance spectroscopy"
+LaboratoryMeasurement,MIN_NITROGEN,7D2a,"Potentially mineralisable N, anerobic incubation - automated colour, continuous segmented flow"
+LaboratoryMeasurement,MIN_NITROGEN,7D2b,"Potentially mineralisable N, anerobic incubation - automated colour, FIA"
+LaboratoryMeasurement,C/N_RATIO,8A1,Total organic carbon/total nitrogen ratio
+LaboratoryMeasurement,C/N_RATIO,8B1,Organic carbon - Walkley and Black/total nitrogen ratio
+LaboratoryMeasurement,NA,8C1,Carbon/Sulphur ratio
+LaboratoryMeasurement,NA,9_E_NR,NA
+LaboratoryMeasurement,PHOSPHORUS,9_NR,Available P (mg/kg) - Not recorded
+LaboratoryMeasurement,PHOSPHORUS,9A_HCL,Total element - P(%) - By boiling HCl
+LaboratoryMeasurement,PHOSPHORUS,9A_HCLP2O5,Total element - P(%) - By boiling HCl(P2O5)
+LaboratoryMeasurement,PHOSPHORUS,9A_HF+,Total element - P(%) - HF/HCl04 Digest
+LaboratoryMeasurement,PHOSPHORUS,9A_NR,Total element - P(%) - Not recorded
+LaboratoryMeasurement,PHOSPHORUS,9A_S14,NA
+LaboratoryMeasurement,PHOSPHORUS,9A1,Total phosphorus - X-ray fluorescence
+LaboratoryMeasurement,PHOSPHORUS,9A2,Total phosphorus - sodium carbonate fusion
+LaboratoryMeasurement,PHOSPHORUS,9A3,"Total Phosphorus (ppm) - semimicro kjeldahl, automated colour"
+LaboratoryMeasurement,PHOSPHORUS,9A3a,"Total Phosphorus (ppm) - semimicro kjeldahl, automated colour, FIA/continuous segmented flow"
+LaboratoryMeasurement,PHOSPHORUS,9A3b,"Total Phosphorus (ppm) - semimicro kjeldahl, ICPAES"
+LaboratoryMeasurement,PHOSPHORUS,9B_9C,Available P (mg/kg) - Bicarbonate P - 0.5M NaHCO3 extractable
+LaboratoryMeasurement,NA,9B_NR,NA
+LaboratoryMeasurement,PHOSPHORUS,9B1,Bicarbonate-extractable phosphorus - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9B2,Bicarbonate-extractable phosphorus - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9B2_COL,Bicarbonate-extractable phosphorus - automated colour. Based on Colwell (1965). Method no longer recommended
+LaboratoryMeasurement,PHOSPHORUS,9BUFF_0,"Buffering Capacity by 0.01M CaCl2, solution of 0 ppm phosphorus added (CSIRO Div of Soil Tech Mem 63/1972)"
+LaboratoryMeasurement,PHOSPHORUS,9BUFF_0.5,"Buffering Capacity by 0.01M CaCl2, solution of 0.5 ppm phosphorus added (CSIRO Div of Soil Tech Mem 63/1972)"
+LaboratoryMeasurement,PHOSPHORUS,9BUFF_1,"Buffering Capacity by 0.01M CaCl2, solution of 1 ppm phosphorus added (CSIRO Div of Soil Tech Mem 63/1972)"
+LaboratoryMeasurement,PHOSPHORUS,9BUFF_2,"Buffering Capacity by 0.01M CaCl2, solution of 2 ppm phosphorus added (CSIRO Div of Soil Tech Mem 63/1972)"
+LaboratoryMeasurement,PHOSPHORUS,9BUFF_4,"Buffering Capacity by 0.01M CaCl2, solution of 4 ppm phosphorus added (CSIRO Div of Soil Tech Mem 63/1972)"
+LaboratoryMeasurement,PHOSPHORUS,9C1,Olsen-extractable phosphorus - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9C2,Olsen-extractable phosphorus - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9D1,Lactate-extractable phosphorus - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9D2,Lactate-extractable phosphorus - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9E,Fluoride-extractable phosphorus (Bray 1-P)
+LaboratoryMeasurement,PHOSPHORUS,9E1,Fluoride-extractable phosphorus (Bray 1-P) - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9E2,Fluoride-extractable phosphorus (Bray 1-P) - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9F1,Calcium chloride-extractable phosphorus - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9F2,Calcium chloride-extractable phosphorus - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9G_BSES,Available P (mg/kg) - Acid P - 0.005M H2SO4 (BSES)
+LaboratoryMeasurement,PHOSPHORUS,9G1,Acid-extractable phosphorus - manual colour
+LaboratoryMeasurement,PHOSPHORUS,9G2,Acid-extractable phosphorus - automated colour
+LaboratoryMeasurement,PHOSPHORUS,9H_NR,Posphate retention % - Not recorded
+LaboratoryMeasurement,ANION_STORAGE,9H1,Anion storage capacity
+LaboratoryMeasurement,PHOSPHATE_SORPTION,9I1,Phosphate sorption index
+LaboratoryMeasurement,NA,9I2,Phosphorus buffer index (Colwell)
+LaboratoryMeasurement,P_BUFFER_INDEX,9I2a,P buffer index - PBI (+ColP) - Murphy and Riley
+LaboratoryMeasurement,P_BUFFER_INDEX,9I2b,P buffer index - PBI (+ColP) - ICPAES
+LaboratoryMeasurement,P_BUFFER_INDEX,9I2c,P buffer index - PBI (+ColP) - Vanadate
+LaboratoryMeasurement,NA,9I3,PBI
+LaboratoryMeasurement,P_BUFFER_INDEX,9I3a,P buffer index - PBI (+OlsenP) - Murphy and Riley
+LaboratoryMeasurement,P_BUFFER_INDEX,9I3b,P buffer index - PBI (+OlsenP) - ICPAES
+LaboratoryMeasurement,P_BUFFER_INDEX,9I3c,P buffer index - PBI (+OlsenP) - Vanadate
+LaboratoryMeasurement,NA,9I4,Phosphorus buffer index (unadjusted)
+LaboratoryMeasurement,P_BUFFER_INDEX,9I4a,P buffer index - PBI (unadj) - Murphy and Riley
+LaboratoryMeasurement,P_BUFFER_INDEX,9I4b,P buffer index - PBI (unadj) - ICPAES
+LaboratoryMeasurement,P_BUFFER_INDEX,9I4c,P buffer index - PBI (unadj) - Vanadate
+LaboratoryMeasurement,PHOSPHATE_SORPTION,9J1,Phosphate sorption curve - manual colour
+LaboratoryMeasurement,NA,9J1_EPC,Equilibrium P concentration - manual colour
+LaboratoryMeasurement,NA,9J1_P,Phosphate sorption curve - manual colour
+LaboratoryMeasurement,NA,9J1_PBC,Phosphorus buffer capacity - manual colour
+LaboratoryMeasurement,PHOSPHATE_SORPTION,9J2,Phosphate sorption curve - automated colour
+LaboratoryMeasurement,NA,9J2_EPC,Equilibrium P concentration - automated colour
+LaboratoryMeasurement,NA,9J2_P,Phosphate sorption curve - automated colour
+LaboratoryMeasurement,NA,9J2_PBC,Phosphorus buffer capacity - automated colour
+LaboratoryMeasurement,PHOSPHORUS_RATIO,9K1a,Mehlich 3-P saturation ratio - colorimetric estimate of P
+LaboratoryMeasurement,PHOSPHORUS_RATIO,9K1b,Mehlich 3-P saturation ratio - ICPAES estimate of P
+LaboratoryMeasurement,PHOSPHORUS_RATIO,9K2,Colwell-P/PBI(+ColP) ratio
+LaboratoryMeasurement,PHOSPHORUS,9M,Available P (mg/kg) - Mehlich P
+LaboratoryMeasurement,PHOSPHORUS,9R1,Resin extractable phosphorus - automated colour (CSIRO Div of Soil Tech Mem 63/1972)
+LaboratoryMeasurement,NA,a-23E,Peroxide oxidisable S calculated as equalivent acidity units
+LaboratoryMeasurement,NA,a-23Q,Excess Acid Neutralising Capacity calculated as equilavent acid neutralising units.
+LaboratoryMeasurement,NA,a-23R,Residual acid extractable S after peroxide expressed in equivalent acidity units
+LaboratoryMeasurement,NA,a-23U,Magnesium reacted calculated as equilavent acid neutralising units.
+LaboratoryMeasurement,NA,a-23Um,Magnesium reacted calculated as equilavent acid neutralising units.- ICPAES
+LaboratoryMeasurement,CA,a-23X,Calcium reacted calaulated as equilavent acid neutralising units.
+LaboratoryMeasurement,CA,a-23Xh,Calcium reacted calaulated as equilavent acid neutralising units. - ICPAES
+LaboratoryMeasurement,SAR,M1a,Sodium absorption ratio (SAR)
+LaboratoryMeasurement,CLAY_MINERAL,MIN_EC,Exchange Capacity - Minerology
+LaboratoryMeasurement,CLAY_MINERAL,MIN_NR_K2O,Kaolin minerals
+LaboratoryMeasurement,NA,P10_1m2m,NA
+LaboratoryMeasurement,NA,P10_20_100,NA
+LaboratoryMeasurement,NA,P10_20_75,NA
+LaboratoryMeasurement,NA,P10_20_75a,NA
+LaboratoryMeasurement,NA,P10_75_106,NA
+LaboratoryMeasurement,PSA,P10_CF_C,Clay (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,PSA,P10_CF_CS,Coarse sand (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,PSA,P10_CF_FS,Fine sand (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,PSA,P10_CF_S,Sand (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,PSA,P10_CF_Z,Silt (%) - Coventry and Fett pipette method
+LaboratoryMeasurement,PSA,P10_GRAV,Gravel (%)
+LaboratoryMeasurement,NA,P10_gt2m,NA
+LaboratoryMeasurement,NA,P10_gt2MI,NA
+LaboratoryMeasurement,NA,P10_gt2OM,NA
+LaboratoryMeasurement,PSA,P10_HYD_C,Clay (%) - Hydrometer Method
+LaboratoryMeasurement,PSA,P10_HYD_CS,Coarse Sand (%) - Hydrometer Method
+LaboratoryMeasurement,PSA,P10_HYD_FS,Fine Sand (%) - Hydrometer Method
+LaboratoryMeasurement,PSA,P10_HYD_S,Sand (%) - Hydrometer Method
+LaboratoryMeasurement,PSA,P10_HYD_Z,Silt (%) - Hydrometer Method
+LaboratoryMeasurement,PSA,P10_NR_C,Clay (%) - Not recorded
+LaboratoryMeasurement,PSA,P10_NR_CS,Coarse sand (%) - Not recorded
+LaboratoryMeasurement,PSA,P10_NR_FS,Fine sand (%) - Not recorded
+LaboratoryMeasurement,PSA,P10_NR_S,Sand (%) - Not recorded
+LaboratoryMeasurement,NA,P10_NR_Saa,NA
+LaboratoryMeasurement,PSA,P10_NR_Z,Silt (%) - Not recorded
+LaboratoryMeasurement,NA,P10_NR_ZC,NA
+LaboratoryMeasurement,PSA,P10_PB_C,Clay (%) - Plummet balance
+LaboratoryMeasurement,PSA,P10_PB_CS,Coarse sand (%) - Plummet balance
+LaboratoryMeasurement,PSA,P10_PB_FS,Fine sand (%) - Plummet balance
+LaboratoryMeasurement,PSA,P10_PB_S,Sand (%) - Plummet balance
+LaboratoryMeasurement,PSA,P10_PB_Z,Silt (%) - Plummet balance
+LaboratoryMeasurement,PSA,P10_PB1_C,Clay (%) - Plummet balance (Acid digestion pretreatment)
+LaboratoryMeasurement,PSA,P10_PB1_CS,Coarse sand (%) - Plummet balance (Acid digestion pretreatment)
+LaboratoryMeasurement,PSA,P10_PB1_FS,Fine sand (%) - Plummet balance (Acid digestion pretreatment)
+LaboratoryMeasurement,PSA,P10_PB1_Z,Silt (%) - Plummet balance (Acid digestion pretreatment)
+LaboratoryMeasurement,PSA,P10_S_0.20,0.20 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_0.48,0.48 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_1,1 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_1000,1000 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_125,125 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_15.6,15.6 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_2,2 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_20,20 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_2000,2000 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_250,250 micron (cumlative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_3.9,3.9 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_31.2,31.2 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_500,500 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_53,53 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_63,63 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,PSA,P10_S_7.8,7.8 micron (cumulative %) - Sedigraph
+LaboratoryMeasurement,NA,P10100_200,NA
+LaboratoryMeasurement,NA,P10106_150,NA
+LaboratoryMeasurement,NA,P10150_180,NA
+LaboratoryMeasurement,NA,P10180_300,NA
+LaboratoryMeasurement,NA,P10200_500,NA
+LaboratoryMeasurement,NA,P10200_600,NA
+LaboratoryMeasurement,NA,P102002000,NA
+LaboratoryMeasurement,NA,P10300_600,NA
+LaboratoryMeasurement,NA,P105002000,NA
+LaboratoryMeasurement,NA,P106001000,NA
+LaboratoryMeasurement,NA,P106002000,NA
+LaboratoryMeasurement,PSA,P10A1_C,Clay (%) - Pipette
+LaboratoryMeasurement,PSA,P10A1_CS,Coarse sand (%) - Pipette
+LaboratoryMeasurement,PSA,P10A1_FS,Fine sand (%) - Pipette
+LaboratoryMeasurement,PSA,P10A1_Z,Silt (%) - Pipette
+LaboratoryMeasurement,DENSITY,P3A_NR,Bulk density - Not recorded
+LaboratoryMeasurement,DENSITY,P3A1,Bulk density - g/cm3
+LaboratoryMeasurement,NA,P3A1_C4,NA
+LaboratoryMeasurement,DENSITY,P3A1_CLOD,"Bulk density  g/cm3 - Clods at 0.1 Bar moisture content (McIntyre & Stirk, 1954, Aust. J. Agric. Res. 5:291-6)"
+LaboratoryMeasurement,NA,P3A1_e,NA
+LaboratoryMeasurement,POROSITY,P3A2,Macro Porosity %
+LaboratoryMeasurement,POROSITY,P3A2_McK,Macro Porosity (%) as determined from McKenzie pore charts
+LaboratoryMeasurement,POROSITY,P3A2_McKMP,Maximum pore diameter (mm) as determined from McKenzie pore charts
+LaboratoryMeasurement,POROSITY,P3A3,Total Porosity %
+LaboratoryMeasurement,MOISTURE_RELEASE,P3A4,Particle Density g/cm3
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_001,0.01 BAR Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_003,0.03 BAR Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_005,0.05 BAR Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_01,0.1 BAR Moisture g/g - Gravimetric  using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_03,0.3 BAR Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,NA,P3B_GV_033,NA
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_05,0.5 BAR Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_1,1 BAR Moisture g/g - Gravimetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_15,15 BAR Moisture g/g - Gravimetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_5,5 BAR Moisture g/g - Gravimetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_GV_SAT,Saturated Moisture g/g - Gravimetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_001,0.01 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_003,0.03 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_005,0.05 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_01,0.1 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_03,0.3 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_05,0.5 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_1,1 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_15,15 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_5,5 BAR Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_NR_SAT,Saturated Moisture % - Not recorded
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_001,0.01 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_003,0.03 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_005,0.05 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_01,0.1 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_03,0.3 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_05,0.5 BAR Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_1,1 BAR Moisture m3/m3 - Volumetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_15,15 BAR Moisture m3/m3 - Volumetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_5,5 BAR Moisture m3/m3 - Volumetric using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B_VL_SAT,Saturated Moisture m3/m3 - Volumetric using suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B1GV_15,15 BAR Moisture g/g - Gravimetric of ground sample (<2mm) using pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B1VL_1,1 BAR Moisture m3/m3 - Volumetric using <2mm sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B1VL_15,15 BAR Moisture m3/m3 - Volumetric using <2mm sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2GV_1,1 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2GV_15,15 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2GV_5,5 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2VL_03,0.3 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2VL_1,1 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2VL_15,15 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B2VL_5,5 BAR Moisture m3/m3 - Volumetric using disturbed sample on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLa001,0.01 BAR Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLa005,0.05 BAR Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLa01,0.1 BAR Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLa03,0.3 BAR Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLa06,0.6 BAR Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLaSAT,Saturated Moisture m3/m3 - Volumetric using undisturbed 76mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb001,"0.01 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb003,"0.03 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb005,"0.05 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb01,"0.1 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb03,"0.33 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb05,"0.5 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLb06,"0.66 BAR Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLbSAT,"Saturated Moisture m3/m3 - Volumetric using undisturbed 73mm diameter and 75mm height core on suction plate taken from center of large core (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc001,0.01 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc003,0.03 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc005,0.05 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc01,0.1 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc03,0.3 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLc06,0.6 BAR Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLcSAT,Saturated Moisture m3/m3 - Volumetric using undisturbed 98mm diameter core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLd06,0.6 BAR Moisture m3/m3 - Volumetric using undisturbed 48mm diameter and 15mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLd1,1 BAR Moisture m3/m3 - Volumetric using undisturbed 48mm diameter and 15mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLd15,15 BAR Moisture m3/m3 - Volumetric using undisturbed 48mm diameter and 15mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLd3,3 BAR Moisture m3/m3 - Volumetric using undisturbed 48mm diameter and 15mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLd5,5 BAR Moisture m3/m3 - Volumetric using undisturbed 48mm diameter and 15mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe004,0.04 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe01,0.1 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe03,0.3 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on suction plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe06,0.6 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe15,15 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe2,2 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B3VLe7,7 BAR Moisture m3/m3 - Volumetric using undisturbed 60mm diameter and 34mm height core on pressure plate
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B4GV_01,"0.1 BAR Moisture g/g - Gravimetric of soil clods (Soil Survey Staff,1967)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B4VL_005,"0.05 BAR Moisture m3/m3 - Volumetric of soil clods (Soil Survey Staff,1967)"
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B5GV_01,0.1 BAR Moisture g/g - Gravimetric of soil clods (CSIRO Div. Of Soils TM 25/66)
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B6VL_DUL,Drained Upper Limit (0.1 BAR) Moisture m3/m3 - Volumetric using APSRU in situ methodology
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B6VL_LL,Lower Limit (15 BAR) Moisture m3/m3 - Volumetric using APSRU in situ methodology
+LaboratoryMeasurement,MOISTURE_RELEASE,P3B6VL_SAT,Saturated Moisture m3/m3 - Volumetric using APSRU in situ methodology
+LaboratoryMeasurement,HYDRAULIC_COND,P4_10_McK,"Unsaturated Hydraulic Conductivity - 10mm potential (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_100_McK,"Unsaturated Hydraulic Conductivity - 100mm potential (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_100DMcK,"Unsaturated Hydraulic Conductivity - 100mm potential - Using disk permeameter with method CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_10DMcK,"Unsaturated Hydraulic Conductivity - 10mm potential - Using disk permeameter with method CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_30_LOV,Unsaturated Hydraulic Conductivity - 50mm potential Loveday falling head method using 98mm diameter cores
+LaboratoryMeasurement,HYDRAULIC_COND,P4_30DMcK,"Unsaturated Hydraulic Conductivity - 30mm potential - Using disk permeameter with method CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_50_McK,"Unsaturated Hydraulic Conductivity - 50mm potential (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_50DMcK,"Unsaturated Hydraulic Conductivity - 50mm potential - Using disk permeameter with method CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_sat,Saturated Hydraulic Conductivity
+LaboratoryMeasurement,HYDRAULIC_COND,P4_sat_FH,"Modified Saturated Hydraulic Conductivity - falling head (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_sat_For,"Saturated Hydraulic Conductivity (Forrest et al, 1985)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4_sat_LOV,Saturated Hydraulic Conductivity - Modified (no de-aired water) Loveday falling head method using 98mm diameter cores
+LaboratoryMeasurement,HYDRAULIC_COND,P4_sat_McK,"Saturated Hydraulic Conductivity (CSIRO Div of Soil, DR 125, McKenzie and Jacquier, 1996)"
+LaboratoryMeasurement,HYDRAULIC_COND,P4D1,Saturated Hydraulic Conductivity
+LaboratoryMeasurement,COLE,P5_COLE,Coefficient of Linear Extensibility (Grossman et al. 1968)
+LaboratoryMeasurement,LINEAR_SHRINKAGE,P5_LS,Linear shrinkage (Standards Association of Australia 1977. AS 1289 C4.1)
+LaboratoryMeasurement,LINEAR_SHRINKAGE,P5_LS_MOD,"Modified linear shrinkage (McKenzie, Jacquier and Ringrose-Voase, AJSR, 1994, 32, 931-8)"
+LaboratoryMeasurement,DISPERSION_INDEX,P6_LP,"Dispersion Index (Loveday and Pyle, 1973)"
+LaboratoryMeasurement,PSA,PWS1-2mm,1000-2000 micron fraction (%) - Wet Sieving after chemical dispersion
+LaboratoryMeasurement,PSA,PWS20-63,20-63 micron fraction (%) - Wet Sieving after chemical dispersion
+LaboratoryMeasurement,PSA,PWS212-425,212-425 micron fraction (%) - Wet Sieving after chemical dispersion
+LaboratoryMeasurement,PSA,PWS425-1mm,425-1000  micron fraction (%) - Wet Sieving after chemical dispersion
+LaboratoryMeasurement,PSA,PWS63-212,63-212 micron fraction (%) - Wet Sieving after chemical dispersion
+LaboratoryMeasurement,NA,s-23F,TAA - calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,s-23G,TPA - calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,s-23H,TSA - calculated as equivalent pyrite S%
+LaboratoryMeasurement,NA,s-23R,Residual acid extractable S after peroxide expressed in % pyrite S
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_AL,Total Element Al - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_CA,Total Element Ca - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_MG,Total Element Mg - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_NA,Total Element Na - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_SI02,Total Element SiO2 - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_CD_TI02,Total Element TiO2 - by Citrate/Dithionite Extraction
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+_MG,Total Element Mg - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+AL,Total Element Al - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+CA,Total Element Ca - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+NA,Total Element Na - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+SIO2,Total Element SiO2 - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_HF+TIO2,Total Element TiO2 - by HF/HClO4 Digest
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_AL,Total Element Al - Not recorded
+LaboratoryMeasurement,NA,TE_NR_AL2O,NA
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_CA,Total Element Ca - Not recorded
+LaboratoryMeasurement,NA,TE_NR_FE20,NA
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_MG,Total Element Mg - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_NA,Total Element Na - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_SI02,Total Element SiO2 - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_NR_TI02,Total Element TiO2 - Not recorded
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRF_MG,Total Element Mg - By XRF
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRFAL,Total Element Al - By XRF
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRFCA,Total Element Ca - By XRF
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRFNA,Total Element Na - By XRF
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRFSI02,Total Element SiO2 - By XRF
+LaboratoryMeasurement,TOTAL_ELEMENTS,TE_XRFTIO2,Total Element TiO2 - By XRF
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ab,Amphibole - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ah,Allophane - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_An,Anatase - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ap,Apatite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Arg,Argonite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_At,Alunite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Bd,Beidellite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Bm,Boehmite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Bt,Biotite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Cb,Cristobalite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ch,Chlorite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ch2,Chloritized 2:1 minerals - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Crn,Corondum - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ct,Calcite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Dr,Dravite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Dt,Dolomite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Fd,Feldspar - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Fh,Ferrihydrite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Fl,Flourite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Fo,Feroxyhite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Gb,Gibbsite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Gl,Glauconite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Gt,Geothite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Gy,Gypsum - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Hl,Halite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Hm,Hematite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Hn,Huntite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ht0,Halloysite (10 A`) - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ht7,Halloysite (7 A`) - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ig,Imogolite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Il,Illite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Im,Ilmenite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Is,Interstratified clay minerals - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Jr,Jarosite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_K2O,K2O - X-Ray Diffraction or Clay Fraction (air dry)
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ka,Kaolin - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Kt,Kaolinite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Lp,Lepidocrosite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mh,Meghemite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mi,Mica - X-Ray Diffraction
+LaboratoryMeasurement,NA,XRD_C_MIN_,Exchange Capacity - Minerology
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mm,Montmorillonite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ms,Magnesite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mt,Magnetite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mu,Muscovite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Mz,Monozite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Nt,Nontronite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ol,Olivine - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Or,Orthoclase - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Pg,Plagioclase - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Pk,Palygorskite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Pl,Plombogummite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Pp,Phlogopite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Ps,Pseudorutile - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Px,Pyroxene - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Py,Pyrophyllite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Qz,Quartz - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Rt,Rutile - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Sd,Siderite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Sl,Saponite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Sp,Saponite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Spn,Sphene - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Srp,Serpentine - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_St,Smectite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Tc,Talc - Tourmaline - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Tr,Tridymite - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Un,Unidentified - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Vm,Vermiculte - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Zi,Zircon - X-Ray Diffraction
+LaboratoryMeasurement,CLAY_MINERAL,XRD_C_Zt,Zeolite - X-Ray Diffraction
