@@ -30,7 +30,7 @@ function(req){
 
   dt <- format(Sys.time(), "%d-%m-%Y")
 
-  logDir <- paste0(projectRoot, "/Logs")
+  logDir <- paste0("Logs")
   if(!dir.exists(logDir)){
      dir.create(logDir, recursive = T)
     }
