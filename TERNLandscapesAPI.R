@@ -10,7 +10,7 @@ library(DBI)
 #projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
 machineName <- as.character(Sys.info()['nodename'])
 if(machineName=='soils-discovery'){
-NSSC_dbPath <- '/home/sea084/NSSC_2.0.0.sqlite'
+NSSC_dbPath <- '/home/sea084/Data/NSSC_2.0.0.sqlite'
 #NSSC_dbPath <- '/OSM/CBR/LW_SOILDATAREPO/work/NSSC/NSSC_2.0.0.sqlite'
 }else{
   NSSC_dbPath <- 'C:/Projects/TernLandscapes/Site Data/NSSC_2.0.0.sqlite'
