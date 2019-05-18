@@ -21,9 +21,9 @@ agencyName <- c('NSWGovernment','VicGovernment','QLDGovernment','SAGovernment','
 restricted <- c(F,T,T,F,F,F,T,F)
 agencyInfo <- data.frame(agencyName, agencyNum, restricted, stringsAsFactors = F)
 
-tableLevels <- read.csv(paste0('Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
-Properties <- read.csv(paste0('Data/Properties.csv'), stringsAsFactors = F)
-labMethods <- read.csv(paste0('Data/LabMethods.csv'), stringsAsFactors = F)
+tableLevels <- read.csv(paste0(rootDir, '/Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
+Properties <- read.csv(paste0(rootDir, '/Data/Properties.csv'), stringsAsFactors = F)
+labMethods <- read.csv(paste0(rootDir, '/Data/LabMethods.csv'), stringsAsFactors = F)
 
 PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
 

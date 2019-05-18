@@ -1,11 +1,15 @@
 library(htmlTable)
 
 
-#projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
 machineName <- as.character(Sys.info()['nodename'])
+if(machineName=='soils-discovery'){
+  rootDir <<- '/srv/plumber/NSSCapi'
+}else{
+  rootDir <<- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
+}
 
-source(paste0('TERNLandscapesAPI.R'))
-source(paste0('functions.R'))
+source(paste0(rootDir, '/TERNLandscapesAPI.R'))
+source(paste0(rootDir, '/functions.R'))
 
 
 #* @apiTitle National Soil Site Collation Web API
