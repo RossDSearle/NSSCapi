@@ -1,4 +1,6 @@
 
+ttp://127.0.0.1:5635/NSSCSoilDataAPI/SoilData?providers=TasGovernment&observedProperty=S_DESC_BY
+
 http://127.0.0.1:5635/SoilDataAPI/Providers
 http://127.0.0.1:5635/SoilDataAPI/Providers?format=xml
 http://127.0.0.1:5635/SoilDataAPI/Providers?format=csv
@@ -13,3 +15,11 @@ http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=json
 http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=csv
 http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=xml
 http://127.0.0.1:5635/SoilDataAPI/PropertyGroups?format=html
+
+
+
+http://esoil.io/NSSCapi/SoilDataAPI/PropertyGroups?format=json
+http://esoil.io/NSSCapi/SoilDataAPI/SoilData?providers=TasGovernment&observedProperty=S_DESC_BY
+
+
+http://127.0.0.1:5635/NSSCSoilDataAPI/SoilData?providers=TasGovernment&observedProperty=S_DESC_BY

@@ -111,7 +111,8 @@ if(OK){
 
        oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
-       return(oOutDF)
+       lodfs[[i]] <- na.omit(oOutDF)
+       #return(oOutDF)
      }else if(tabLev == 3){
 
        NSSC_con <- dbConnect(RSQLite::SQLite(), NSSC_dbPath)
@@ -132,7 +133,8 @@ if(OK){
 
            oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                         fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
-           return(na.omit(oOutDF))
+           lodfs[[i]] <- na.omit(oOutDF)
+           #return(na.omit(oOutDF))
 
          }else{
            # All other tables at this level
@@ -151,7 +153,8 @@ if(OK){
 
            oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                         0 , 0 , propType, prop, fdf[, 9] , 'NA')
-           return(na.omit(oOutDF))
+           lodfs[[i]] <- na.omit(oOutDF)
+           #return(na.omit(oOutDF))
          }
      }else if(tabLev == 2){
        # Observations table only
@@ -171,7 +174,8 @@ if(OK){
 
        oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
-       return(na.omit(oOutDF))
+       lodfs[[i]] <- na.omit(oOutDF)
+       #return(na.omit(oOutDF))
 
 
      }else if(tabLev == 1){
@@ -193,7 +197,8 @@ if(OK){
 
        oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     0 , 0 , propType, prop, fdf[, 9] , 'NA')
-       return(na.omit(oOutDF))
+       lodfs[[i]] <- na.omit(oOutDF)
+      #return(na.omit(oOutDF))
 
 
      }else{
