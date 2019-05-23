@@ -1,7 +1,7 @@
 library(plumber)
 library(htmltidy)
 
-deployDir <-'/srv/plumber/NSSCapi'
+deployDir <-'/srv/plumber/TERNLandscapes/NSSCapi'
 
 server <- 'http://esoil.io'
 portNum <- 8075
