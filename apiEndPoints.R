@@ -1,13 +1,18 @@
 library(htmlTable)
 
 
-projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
 machineName <- as.character(Sys.info()['nodename'])
+if(machineName=='soils-discovery'){
+  rootDir <<- '/srv/plumber/TERNLandscapes/NSSCapi'
+}else{
+  rootDir <<- 'C:/Users/sea084/Dropbox/RossRCode/Git/TERNLandscapes/NSSCapi'
+}
 
-source(paste0(projectRoot, '/TERNLandscapesAPI.R'))
-source(paste0(projectRoot, '/functions.R'))
+source(paste0(rootDir, '/TERNLandscapesAPI.R'))
+source(paste0(rootDir, '/functions.R'))
 
-#* @apiTitle National Soil Site Collation Web API
+
+#* @apiTitle National Soil Site Collation Web API V2
 #* @apiDescription These services allow <b>unified</b> and <b>standardised</b> access to a range of disparate soil database systems.<br><br> More detail about the Soils Federation Service can be found <a href='http://esoil.io/FederatedServices/FedeartedSesnsorsHelpPage.html' > here </a>
 
 
@@ -29,12 +34,12 @@ function(req){
 
   dt <- format(Sys.time(), "%d-%m-%Y")
 
-  logDir <- paste0(projectRoot, "/Logs")
+  logDir <- paste0("Logs")
   if(!dir.exists(logDir)){
      dir.create(logDir, recursive = T)
     }
 
-  logfile <- paste0(projectRoot, "/Logs/NSSC_API_logs_", dt, ".csv")
+  logfile <- paste0(rootDir, "/Logs/NSSC_API_logs_", dt, ".csv")
   if(file.exists(logfile)){
     cat(logentry, '\n', file=logfile, append=T)
   }else{
@@ -58,7 +63,7 @@ function(req){
 #* @param observedProperty (Required) The soil property code.
 #* @param providers (Required) The Organisation code for the data you want to query.
 
-#* @get /NSSCSoilDataAPI/SoilData
+#* @get /SoilDataAPI/SoilData
 apiGetNSSCSoilData<- function(res, usr='Public', pwd='Public', providers=NULL, observedProperty=NULL, observedPropertyGroup=NULL, key=NULL, format='json'){
 
 tryCatch({
