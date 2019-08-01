@@ -10,44 +10,80 @@ library(DBI)
 #projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
 machineName <- as.character(Sys.info()['nodename'])
 if(machineName=='soils-discovery'){
-NSSC_dbPath <- '/home/sea084/Data/NSSC_2.0.0.sqlite'
-#NSSC_dbPath <- '/OSM/CBR/LW_SOILDATAREPO/work/NSSC/NSSC_2.0.0.sqlite'
+  fedRoot <- ''
+  NSSC_dbPath <- '/home/sea084/Data/NSSC_2.0.0.sqlite'
+  fedDB <-  ''
 }else{
+  fedRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/TernLandscapes/APIs/SoilDataFederatoR'
   NSSC_dbPath <- 'C:/Projects/TernLandscapes/Site Data/NSSC_2.0.0.sqlite'
+  fedDB <-  'C:/R/R-3.6.0/library/SoilDataFederatoR/extdata/soilsFederator.sqlite'
 }
 
-agencyNum <- c('1','2','3','4','5','6','7','8')
-agencyName <- c('NSWGovernment','VicGovernment','QLDGovernment','SAGovernment','WAGovernment','TasGovernment','NTGovernment','CSIRO')
-restricted <- c(F,T,T,F,F,F,T,F)
-agencyInfo <- data.frame(agencyName, agencyNum, restricted, stringsAsFactors = F)
+source(paste0(fedRoot, '/R/Helpers/dbHelpers.R'))
 
-tableLevels <- read.csv(paste0(rootDir, '/Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
-Properties <- read.csv(paste0(rootDir, '/Data/Properties.csv'), stringsAsFactors = F)
-labMethods <- read.csv(paste0(rootDir, '/Data/LabMethods.csv'), stringsAsFactors = F)
+# agencyNum <- c('1','2','3','4','5','6','7','8')
+# agencyName <- c('NSWGovernment','VicGovernment','QLDGovernment','SAGovernment','WAGovernment','TasGovernment','NTGovernment','CSIRO')
+# restricted <- c(F,T,T,F,F,F,T,F)
+# agencyInfo <- data.frame(agencyName, agencyNum, restricted, stringsAsFactors = F)
+# 
+# tableLevels <- read.csv(paste0(rootDir, '/Data/TERNLandscapes_TableLevels.csv'), stringsAsFactors = F)
+# Properties <- read.csv(paste0(rootDir, '/Data/Properties.csv'), stringsAsFactors = F)
+# labMethods <- read.csv(paste0(rootDir, '/Data/LabMethods.csv'), stringsAsFactors = F)
+# 
 
-PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
+#conNSCC <- dbConnect(RSQLite::SQLite(), fedDB)
+
+# doQueryFromFed(paste0("select * from NSSC_AgencyCodes WHERE OrgName = '", provider, "'"))
+# 
+# PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
 
 
-getNSSCProviders <- function(){
-  return(agencyInfo[,-2])
-}
+getNSSCProviders <- function(verbose = T){
+
+  orgs <- c("QLDGovernment", "CSIRO", "NTGovernment", "TasGovernment", "WAGovernment", "SAGovernment", "VicGovernment", "NSWGovernment")
+  df <- getProviders()
+  provs <- df[df$OrgName %in% orgs,]
+  if(verbose)
+  {
+    return(data.frame(provs, stringsAsFactors = F))
+  } else{
+    return( data.frame(Providers=provs$OrgName, stringsAsFactors = F))
+  }
+ }
 
 getNSSCProperties <- function(PropertyGroup=NULL, verbose=T){
-  return(getProperties(Properties, PropertyGroup, verbose))
+  props <- getProperties(PropertyGroup, verbose)
+  propDF <- data.frame(props, stringsAsFactors = F)
+  return(propDF)
 }
 
 getNSSCPropertyGroups <- function(){
-  grps <- na.omit(unique(Properties$PropertyGroup))
-  data.frame(PropertyGroup=grps)
+  grps <- na.omit(getProperties(NULL, T))
+  ugrp <- unique(grps$PropertyGroup)
+  grpDF <- data.frame(PropertyGroup=ugrp, stringsAsFactors = F)
+  return(grpDF)
 }
+
+#provider <- 'NTGovernment'
+#provider <- 'NSWGovernment'
 
 getData_NSSC <- function( provider=NULL, observedProperty=NULL, observedPropertyGroup=NULL, key=NULL){
 
   OrgName <- provider
-  stateCode <- agencyInfo[agencyInfo$agencyName == provider, ]$agencyNum
-  isRestricted <- agencyInfo[agencyInfo$agencyName == provider, ]$restricted
-  nativeProps <- getPropertiesList(Properties, observedProperty, observedPropertyGroup)
+  # stateCode <- agencyInfo[agencyInfo$agencyName == provider, ]$agencyNum
+  # isRestricted <- agencyInfo[agencyInfo$agencyName == provider, ]$restricted
+  # nativeProps <- getPropertiesList(Properties, observedProperty, observedPropertyGroup)
+  # getNativeProperties(OrgName, mappings, observedProperty, observedPropertyGroup)
+  
+  orgs <-  doQueryFromFed(paste0("select * from Providers WHERE OrgName = '", provider, "'"))
+  isRestricted <- as.logical( orgs$Restricted)
+  
+  acs <- doQueryFromFed(paste0("select * from NSSC_AgencyCodes WHERE OrgName = '", provider, "'"))
+  ac <- acs$sCode[1]
  
+  pl <- getPropertiesList(observedProperty, observedPropertyGroup)
+  mappings <- doQueryFromFed(paste0("Select * from Mappings where Organisation = '", OrgName, "'" ))
+  nativeProps <- getNativeProperties(OrgName, mappings, observedProperty, observedPropertyGroup)
   
   OK=T
   if(isRestricted){
@@ -70,7 +106,8 @@ if(OK){
   for (i in 1:length(nativeProps)) {
 
     prop <- nativeProps[i]
-    propType <- Properties[str_to_upper(Properties$Property) == str_to_upper(prop), ]$PropertyType
+    #propType <- Properties[str_to_upper(Properties$Property) == str_to_upper(prop), ]$PropertyType
+    propType <- getPropertyType(prop)
 
     if(propType==PropertyTypes$LaboratoryMeasurement){
 
@@ -86,17 +123,19 @@ if(OK){
       if(nrow(fdf) > 0){
 
         #propertyType <- getPropertyType(prop)
-        units <- labMethods[str_to_upper(labMethods$LABM_CODE) == str_to_upper(prop), ]$LABM_UNITS
+        #units <- labMethods[str_to_upper(labMethods$LABM_CODE) == str_to_upper(prop), ]$LABM_UNITS
+        units <- getUnits(propertyType = propType, prop = prop)
         
-        oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$samp_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                     fdf$samp_upper_depth , fdf$samp_lower_depth , propType, prop, fdf$labr_value , units)
+        oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$samp_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                     fdf$samp_upper_depth , fdf$samp_lower_depth , propType, prop, fdf$labr_value , units, 'Brilliant')
         lodfs[[i]] <- oOutDF
       }
     }else{
 
 
-      tabName <- Properties[str_to_upper(Properties$Property) == str_to_upper(prop), ]$PropertyGroup
-      tabLev <- tableLevels[str_to_upper(tableLevels$Table) == str_to_upper(tabName), 2]
+      tabName <- as.character(doQueryFromFed(paste0("select PropertyGroup from Properties WHERE Property = '", prop, "'")))
+     # tabName <- Properties[str_to_upper(Properties$Property) == str_to_upper(prop), ]$PropertyGroup
+      tabLev <- as.numeric(doQueryFromFed(paste0("select Level from TableLevels WHERE TableName = '", tabName, "'")))
 
      if(tabLev == 4){
        NSSC_con <- dbConnect(RSQLite::SQLite(), NSSC_dbPath)
@@ -115,8 +154,8 @@ if(OK){
 
        head(fdf)
 
-       oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                    fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
+       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                    fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
        #return(oOutDF)
      }else if(tabLev == 3){
@@ -137,8 +176,8 @@ if(OK){
 
            head(fdf)
 
-           oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                        fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
+           oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                        fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
            lodfs[[i]] <- na.omit(oOutDF)
            #return(na.omit(oOutDF))
 
@@ -157,8 +196,8 @@ if(OK){
 
            head(fdf)
 
-           oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                        0 , 0 , propType, prop, fdf[, 9] , 'NA')
+           oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                        0 , 0 , propType, prop, fdf[, 9] , 'NA', 'Brilliant')
            lodfs[[i]] <- na.omit(oOutDF)
            #return(na.omit(oOutDF))
          }
@@ -178,10 +217,9 @@ if(OK){
 
        head(fdf)
 
-       oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                    fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA')
+       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                    fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
-       #return(na.omit(oOutDF))
 
 
      }else if(tabLev == 1){
@@ -201,10 +239,9 @@ if(OK){
 
        head(fdf)
 
-       oOutDF <- generateResponseDF(OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
-                                    0 , 0 , propType, prop, fdf[, 9] , 'NA')
+       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+                                    0 , 0 , propType, prop, fdf[, 9] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
-      #return(na.omit(oOutDF))
 
 
      }else{

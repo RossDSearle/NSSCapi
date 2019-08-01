@@ -5,11 +5,11 @@ machineName <- as.character(Sys.info()['nodename'])
 if(machineName=='soils-discovery'){
   rootDir <<- '/srv/plumber/TERNLandscapes/NSSCapi'
 }else{
-  rootDir <<- 'C:/Users/sea084/Dropbox/RossRCode/Git/TERNLandscapes/NSSCapi'
+  rootDir <<- 'C:/Users/sea084/Dropbox/RossRCode/Git/TERNLandscapes/APIs/NSSCapi'
 }
 
-source(paste0(rootDir, '/TERNLandscapesAPI.R'))
-source(paste0(rootDir, '/functions.R'))
+source(paste0(rootDir, '/NSSC_API.R'))
+#source(paste0(rootDir, '/functions.R'))
 
 
 #* @apiTitle National Soil Site Collation Web API V2
@@ -86,13 +86,14 @@ tryCatch({
 
 #* List of available organisations
 #* @param format (Optional) format of the response to return. Either json, csv, or xml. Default = json
+#* @param verbose (Optional) return full records or just the provider code. Either T or F
 
 #* @get /SoilDataAPI/Providers
-apiGetProviders <- function( res, format='json'){
+apiGetProviders <- function( res, format='json', verbose=T){
 
   tryCatch({
 
-    DF <-getNSSCProviders()
+    DF <-getNSSCProviders(verbose)
     label <- 'DataProvider'
     resp <- cerealize(DF, label, format, res)
 
@@ -115,22 +116,22 @@ apiGetProviders <- function( res, format='json'){
 
 
 #* @param format (Optional) format of the response to return. Either json, csv, or xml. Default = json
-#* @param verbose (Optional) return just the property codes or the full descriptions. Default = True
+#* @param verbose (Optional) return just the property codes or the full descriptions. Either T or F. Default = F
 #* @param PropertyGroup (Optional) return just the properties for a given PropertGroup. Default = All
 
 
 #* @get /SoilDataAPI/Properties
-apiGetPropeties <- function( res, PropertyGroup=NULL, verbose=T, format='json'){
+apiGetProperties <- function( res, PropertyGroup=NULL, verbose=T, format='json'){
 
   tryCatch({
 
-    DF <-getNSSCProperties(PropertyGroup, verbose)
+    DF <- getNSSCProperties(PropertyGroup, verbose)
     label <- 'Property'
     
     
-    d1 <- str_replace_all(DF$Description, '<', 'Less than ')
-    d2 <- str_replace_all(d1, '>', 'Greater than ')
-    DF$Description <- d2
+    # d1 <- str_replace_all(DF$Description, '<', 'Less than ')
+    # d2 <- str_replace_all(d1, '>', 'Greater than ')
+    # DF$Description <- d2
     resp <- cerealize(DF, label, format, res)
     
     return(resp)
@@ -152,15 +153,10 @@ apiGetPropeties <- function( res, PropertyGroup=NULL, verbose=T, format='json'){
 apiGetPropetyGroups <- function( res, format='json'){
 
   tryCatch({
-
     DF <-getNSSCPropertyGroups()
-   
-    head(DF)
     label <- 'PropertyGroup'
     resp <- cerealize(DF, label, format, res)
-    
     return(resp)
-    
 
   }, error = function(res)
   {

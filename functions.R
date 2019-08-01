@@ -37,21 +37,21 @@ doQuery <- function(conn, sql){
   return(res)
 }
 
-blankResponseDF <- function(){
-  
-  outDF <- na.omit(data.frame(Organisation=NULL, Observation_ID=character(), SampleID=character(), Date=character() ,
-                              Longitude=numeric() , Latitude= numeric(),
-                              UpperDepth=numeric() , LowerDepth=numeric() , PropertyType=character(), ObservedProperty=character(), Value=numeric() , Units= character()))
-}
-
-generateResponseDF <- function(provider, observation_ID, sampleID, date, longitude, latitude, upperDepth, lowerDepth, dataType, observedProp, value, units ){
-  
-  outDF <- na.omit(data.frame(Provider=provider, Observation_ID=observation_ID, SampleID=sampleID , Date=date ,
-                              Longitude=longitude, Latitude=latitude ,
-                              UpperDepth=upperDepth, LowerDepth=lowerDepth, PropertyType=dataType, ObservedProperty=observedProp, Value=value , Units= units))
-  oOutDF <- outDF[order(outDF$Observation_ID, outDF$UpperDepth, outDF$SampleID),]
-  return(oOutDF)
-}
+# blankResponseDF <- function(){
+#   
+#   outDF <- na.omit(data.frame(Organisation=NULL, Observation_ID=character(), SampleID=character(), Date=character() ,
+#                               Longitude=numeric() , Latitude= numeric(),
+#                               UpperDepth=numeric() , LowerDepth=numeric() , PropertyType=character(), ObservedProperty=character(), Value=numeric() , Units= character()))
+# }
+# 
+# generateResponseDF <- function(provider, observation_ID, sampleID, date, longitude, latitude, upperDepth, lowerDepth, dataType, observedProp, value, units ){
+#   
+#   outDF <- na.omit(data.frame(Provider=provider, Observation_ID=observation_ID, SampleID=sampleID , Date=date ,
+#                               Longitude=longitude, Latitude=latitude ,
+#                               UpperDepth=upperDepth, LowerDepth=lowerDepth, PropertyType=dataType, ObservedProperty=observedProp, Value=value , Units= units))
+#   oOutDF <- outDF[order(outDF$Observation_ID, outDF$UpperDepth, outDF$SampleID),]
+#   return(oOutDF)
+# }
 
 
 
