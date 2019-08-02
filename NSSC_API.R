@@ -10,13 +10,13 @@ library(DBI)
 #projectRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/NSSCapi'
 machineName <- as.character(Sys.info()['nodename'])
 if(machineName=='soils-discovery'){
-  fedRoot <- ''
+  fedRoot <- '/srv/plumber/TERNLandscapes/SoilDataFederatoR'
   NSSC_dbPath <- '/home/sea084/Data/NSSC_2.0.0.sqlite'
-  fedDB <-  ''
+  dbPathSoilsFed <-  '/srv/plumber/TERNLandscapes/SoilDataFederatoR/DB/soilsFederator.sqlite'
 }else{
   fedRoot <- 'C:/Users/sea084/Dropbox/RossRCode/Git/TernLandscapes/APIs/SoilDataFederatoR'
   NSSC_dbPath <- 'C:/Projects/TernLandscapes/Site Data/NSSC_2.0.0.sqlite'
-  fedDB <-  'C:/R/R-3.6.0/library/SoilDataFederatoR/extdata/soilsFederator.sqlite'
+  dbPathSoilsFed <-  'C:/R/R-3.6.0/library/SoilDataFederatoR/extdata/soilsFederator.sqlite'
 }
 
 source(paste0(fedRoot, '/R/Helpers/dbHelpers.R'))
@@ -35,7 +35,7 @@ source(paste0(fedRoot, '/R/Helpers/dbHelpers.R'))
 
 # doQueryFromFed(paste0("select * from NSSC_AgencyCodes WHERE OrgName = '", provider, "'"))
 # 
-# PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
+PropertyTypes <- data.frame(LaboratoryMeasurement='LaboratoryMeasurement', FieldMeasurement='FieldMeasurement', stringsAsFactors = F)
 
 
 getNSSCProviders <- function(verbose = T){
@@ -64,8 +64,6 @@ getNSSCPropertyGroups <- function(){
   return(grpDF)
 }
 
-#provider <- 'NTGovernment'
-#provider <- 'NSWGovernment'
 
 getData_NSSC <- function( provider=NULL, observedProperty=NULL, observedPropertyGroup=NULL, key=NULL){
 

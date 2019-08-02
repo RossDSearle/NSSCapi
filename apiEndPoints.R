@@ -30,16 +30,26 @@ function(req){
        str_replace_all( req$HTTP_USER_AGENT, ",", ""), ",",
        req$QUERY_STRING, ",",
        req$REMOTE_ADDR
-      )
+      );
 
   dt <- format(Sys.time(), "%d-%m-%Y")
 
-  logDir <- paste0("Logs")
+  logDir <- paste0("Logs");
   if(!dir.exists(logDir)){
      dir.create(logDir, recursive = T)
     }
 
   logfile <- paste0(rootDir, "/Logs/NSSC_API_logs_", dt, ".csv")
+  
+  try(writeLogEntry(logfile, logentry), silent = TRUE)
+
+  plumber::forward()
+}
+
+
+
+writeLogEntry <- function(logfile, logentry){
+  
   if(file.exists(logfile)){
     cat(logentry, '\n', file=logfile, append=T)
   }else{
@@ -47,38 +57,6 @@ function(req){
     cat(hdr, file=logfile, append=F)
     cat(logentry, '\n', file=logfile, append=T)
   }
-
-  plumber::forward()
-}
-
-
-
-
-
-#* ReturnsSoil Property data
-
-#* @param format (Optional) format of the response to return. Either json, csv, or xml. Default = json
-#* @param key (Optional) A key to allow access the restricted data sets.
-#* @param observedPropertyGroup (Required) A code specifying the group of soil observed properties to query.
-#* @param observedProperty (Required) The soil property code.
-#* @param providers (Required) The Organisation code for the data you want to query.
-
-#* @get /SoilDataAPI/SoilData
-apiGetNSSCSoilData<- function(res, usr='Public', pwd='Public', providers=NULL, observedProperty=NULL, observedPropertyGroup=NULL, key=NULL, format='json'){
-
-tryCatch({
-
-  print(paste0('Providers = ', providers))
-        DF <- getData_NSSC(providers, observedProperty, observedPropertyGroup, key)
-         label <- 'SoilProperty'
-         resp <- cerealize(DF, label, format, res)
-         return(resp)
-  }, error = function(res)
-  {
-    print(geterrmessage())
-    res$status <- 400
-    list(error=jsonlite::unbox(geterrmessage()))
-  })
 }
 
 
@@ -165,6 +143,42 @@ apiGetPropetyGroups <- function( res, format='json'){
     list(error=jsonlite::unbox(geterrmessage()))
   })
 }
+
+
+
+
+#* ReturnsSoil Property data
+
+#* @param format (Optional) format of the response to return. Either json, csv, or xml. Default = json
+#* @param key (Optional) A key to allow access the restricted data sets.
+#* @param observedPropertyGroup (Required) A code specifying the group of soil observed properties to query.
+#* @param observedProperty (Required) The soil property code.
+#* @param provider (Required) The Organisation code for the data you want to query.
+
+#* @get /SoilDataAPI/SoilData
+apiGetNSSCSoilData<- function(res, usr='Public', pwd='Public', provider=NULL, observedProperty=NULL, observedPropertyGroup=NULL, key=NULL, format='json'){
+  
+  tryCatch({
+    
+    print(paste0('Provider = ', provider))
+    DF <- getData_NSSC(provider, observedProperty, observedPropertyGroup, key)
+    label <- 'SoilProperty'
+    resp <- cerealize(DF, label, format, res)
+    return(resp)
+  }, error = function(res)
+  {
+    print(geterrmessage())
+    res$status <- 400
+    list(error=jsonlite::unbox(geterrmessage()))
+  })
+}
+
+
+
+
+
+
+
 
 
 
