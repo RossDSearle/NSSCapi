@@ -15,7 +15,7 @@ if(machineName=='soils-discovery'){
 
 #server <- 'http://esoil.io'
 portNum <- 8075
-portNum <- 8079
+#portNum <- 8079
 r <- plumb(paste0(deployDir, "/apiEndPoints.R"))  
 print(r)
 
