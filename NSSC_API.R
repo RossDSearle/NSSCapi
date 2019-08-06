@@ -110,10 +110,29 @@ if(OK){
     if(propType==PropertyTypes$LaboratoryMeasurement){
 
       NSSC_con <- dbConnect(RSQLite::SQLite(), NSSC_dbPath)
-      sql <- paste0("SELECT OBSERVATIONS.agency_code, OBSERVATIONS.proj_code, OBSERVATIONS.s_id, OBSERVATIONS.o_id, OBSERVATIONS.o_date_desc, OBSERVATIONS.o_latitude_GDA94, OBSERVATIONS.o_longitude_GDA94, SAMPLES.samp_no, SAMPLES.samp_upper_depth, SAMPLES.samp_lower_depth, LAB_RESULTS.labm_code, LAB_RESULTS.labr_value
-                      FROM OBSERVATIONS INNER JOIN (SAMPLES INNER JOIN LAB_RESULTS ON (SAMPLES.samp_no = LAB_RESULTS.samp_no) AND (SAMPLES.h_no = LAB_RESULTS.h_no) AND (SAMPLES.o_id = LAB_RESULTS.o_id) AND (SAMPLES.s_id = LAB_RESULTS.s_id) AND (SAMPLES.proj_code = LAB_RESULTS.proj_code) AND (SAMPLES.agency_code = LAB_RESULTS.agency_code)) ON (OBSERVATIONS.o_id = SAMPLES.o_id) AND (OBSERVATIONS.s_id = SAMPLES.s_id) AND (OBSERVATIONS.proj_code = SAMPLES.proj_code) AND (OBSERVATIONS.agency_code = SAMPLES.agency_code)
-                      WHERE (((LAB_RESULTS.labm_code)='", prop ,"'));")
-      fdf = doQuery(NSSC_con, sql)
+      # sql <- paste0("SELECT OBSERVATIONS.agency_code, OBSERVATIONS.proj_code, OBSERVATIONS.s_id, OBSERVATIONS.o_id, OBSERVATIONS.o_date_desc, OBSERVATIONS.o_latitude_GDA94, OBSERVATIONS.o_longitude_GDA94, SAMPLES.samp_no, SAMPLES.samp_upper_depth, SAMPLES.samp_lower_depth, LAB_RESULTS.labm_code, LAB_RESULTS.labr_value
+      #                 FROM OBSERVATIONS INNER JOIN (SAMPLES INNER JOIN LAB_RESULTS ON (SAMPLES.samp_no = LAB_RESULTS.samp_no) AND (SAMPLES.h_no = LAB_RESULTS.h_no) AND (SAMPLES.o_id = LAB_RESULTS.o_id) AND (SAMPLES.s_id = LAB_RESULTS.s_id) AND (SAMPLES.proj_code = LAB_RESULTS.proj_code) AND (SAMPLES.agency_code = LAB_RESULTS.agency_code)) ON (OBSERVATIONS.o_id = SAMPLES.o_id) AND (OBSERVATIONS.s_id = SAMPLES.s_id) AND (OBSERVATIONS.proj_code = SAMPLES.proj_code) AND (OBSERVATIONS.agency_code = SAMPLES.agency_code)
+      #                 WHERE LAB_RESULTS.labm_code='", prop ,"' and OBSERVATIONS.agency_code ='", ac, "'")
+      # 
+      
+      sql <- paste0("SELECT AGENCIES.STATE_CODE, OBSERVATIONS.agency_code, OBSERVATIONS.proj_code, OBSERVATIONS.s_id, OBSERVATIONS.o_id, OBSERVATIONS.o_date_desc, OBSERVATIONS.o_latitude_GDA94, OBSERVATIONS.o_longitude_GDA94, SAMPLES.samp_no, SAMPLES.samp_upper_depth, SAMPLES.samp_lower_depth, LAB_RESULTS.labm_code, LAB_RESULTS.labr_value
+ FROM AGENCIES INNER JOIN (((SITES INNER JOIN OBSERVATIONS ON (SITES.s_id = OBSERVATIONS.s_id) AND (SITES.proj_code = OBSERVATIONS.proj_code) AND (SITES.agency_code = OBSERVATIONS.agency_code)) INNER JOIN SAMPLES ON (OBSERVATIONS.o_id = SAMPLES.o_id) AND (OBSERVATIONS.s_id = SAMPLES.s_id) AND (OBSERVATIONS.proj_code = SAMPLES.proj_code) AND (OBSERVATIONS.agency_code = SAMPLES.agency_code)) INNER JOIN LAB_RESULTS ON (SAMPLES.h_no = LAB_RESULTS.h_no) AND (SAMPLES.o_id = LAB_RESULTS.o_id) AND (SAMPLES.s_id = LAB_RESULTS.s_id) AND (SAMPLES.proj_code = LAB_RESULTS.proj_code) AND (SAMPLES.agency_code = LAB_RESULTS.agency_code)) ON AGENCIES.AGENCY_CODE = SITES.agency_code
+WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
+     
+      
+      # sqlTemplate <- paste0('SELECT AGENCIES.STATE_CODE, SITES.agency_code, SITES.proj_code, SITES.s_id, OBSERVATIONS.o_id, OBSERVATIONS.o_date_desc, OBSERVATIONS.o_longitude_GDA94, OBSERVATIONS.o_latitude_GDA94, HORIZONS.h_no, HORIZONS.h_upper_depth, HORIZONS.h_lower_depth, xxxx.yyyy
+      #                 FROM AGENCIES INNER JOIN (((SITES INNER JOIN OBSERVATIONS ON (SITES.s_id = OBSERVATIONS.s_id) AND (SITES.proj_code = OBSERVATIONS.proj_code) AND (SITES.agency_code = OBSERVATIONS.agency_code)) INNER JOIN HORIZONS ON (OBSERVATIONS.o_id = HORIZONS.o_id) AND (OBSERVATIONS.s_id = HORIZONS.s_id) AND (OBSERVATIONS.proj_code = HORIZONS.proj_code) AND (OBSERVATIONS.agency_code = HORIZONS.agency_code)) INNER JOIN xxxx ON (HORIZONS.h_no = xxxx.h_no) AND (HORIZONS.o_id = xxxx.o_id) AND (HORIZONS.s_id = xxxx.s_id) AND (HORIZONS.proj_code = xxxx.proj_code) AND (HORIZONS.agency_code = xxxx.agency_code)) ON AGENCIES.AGENCY_CODE = SITES.agency_code
+      #                       WHERE (((AGENCIES.STATE_CODE)="zzzz") AND ((xxxx.yyyy) Is Not Null))
+      #                       ORDER BY SITES.agency_code, SITES.proj_code, SITES.s_id, OBSERVATIONS.o_id, HORIZONS.h_no, HORIZONS.h_upper_depth;
+      #                       ')
+      # 
+      # sql1 <- str_replace_all(sqlTemplate, 'xxxx', tabName)
+      # sql2 <- str_replace_all(sql1, 'yyyy', prop)
+      # sql3 <- str_replace_all(sql2, 'zzzz', stateCode)
+      # 
+      
+      
+       fdf = doQuery(NSSC_con, sql)
       dbDisconnect(NSSC_con)
 
       #fdf <- qres[!(qres$agency_code %in% agencyFilters), ]

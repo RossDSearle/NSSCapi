@@ -13,7 +13,7 @@ observedProperty = 'SEG_FORM'
 observedProperty = 'RO_ABUN'
 observedProperty = 'S_DESC_BY'
 
-df <- getData_NSSC(provider='TasGovernment', observedProperty=op, observedPropertyGroup = NULL)
+df <- getData_NSSC(provider='TasGovernment', observedProperty='3A1', observedPropertyGroup = NULL)
 getData_NSSC(provider='QLDGovernment', observedProperty=op, observedPropertyGroup = NULL)
 
 providers='TasGovernment'
