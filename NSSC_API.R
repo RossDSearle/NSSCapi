@@ -143,7 +143,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
         #units <- labMethods[str_to_upper(labMethods$LABM_CODE) == str_to_upper(prop), ]$LABM_UNITS
         units <- getUnits(propertyType = propType, prop = prop)
         
-        oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$samp_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+        oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$samp_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                      fdf$samp_upper_depth , fdf$samp_lower_depth , propType, prop, fdf$labr_value , units, 'Brilliant')
         lodfs[[i]] <- oOutDF
       }
@@ -171,7 +171,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
 
        head(fdf)
 
-       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+       oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
        #return(oOutDF)
@@ -193,7 +193,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
 
            head(fdf)
 
-           oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+           oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                         fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
            lodfs[[i]] <- na.omit(oOutDF)
            #return(na.omit(oOutDF))
@@ -213,7 +213,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
 
            head(fdf)
 
-           oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+           oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                         0 , 0 , propType, prop, fdf[, 9] , 'NA', 'Brilliant')
            lodfs[[i]] <- na.omit(oOutDF)
            #return(na.omit(oOutDF))
@@ -234,7 +234,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
 
        head(fdf)
 
-       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+       oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), fdf$h_no , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     fdf$h_upper_depth , fdf$h_lower_depth , propType, prop, fdf[, 12] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
 
@@ -256,7 +256,7 @@ WHERE LAB_RESULTS.labm_code='", prop ,"' and AGENCIES.STATE_CODE='", ac, "';")
 
        head(fdf)
 
-       oOutDF <- generateResponseDF("NSCC", OrgName, paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
+       oOutDF <- generateResponseDF(provider, 'Agency Soil Database', paste0(fdf$agency_code, '_', fdf$proj_code, '_', fdf$s_id, '_', fdf$o_id), 1 , fdf$o_date_desc , fdf$o_longitude_GDA94, fdf$o_latitude_GDA94 ,
                                     0 , 0 , propType, prop, fdf[, 9] , 'NA', 'Brilliant')
        lodfs[[i]] <- na.omit(oOutDF)
 
